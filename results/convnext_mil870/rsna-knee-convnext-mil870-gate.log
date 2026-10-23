@@ -1,0 +1,27 @@
+[{"stream_name":"stdout","time":2.218402794,"data":"[cnxt870] PRIVATE GATE ConvNeXt MIL reader on holdout. DO NOT SUBMIT.\n"}
+,{"stream_name":"stdout","time":2.218489913,"data":"[cnxt870] Hard watchdog 5400s. Keep 55779066. Never Submit this gate.\n"}
+,{"stream_name":"stdout","time":2.21850203,"data":"[cnxt870] start elapsed=0.0s budget=5400s\n"}
+,{"stream_name":"stdout","time":2.21871552,"data":"[cnxt870] competition root /kaggle/input/competitions/rsna-knee-abnormality-detection\n"}
+,{"stream_name":"stdout","time":2.41440403,"data":"[cnxt870] found llm_labels_v4_blend.csv at /kaggle/input/datasets/stevenleehans/rsna-knee-llm-report-labels/llm_labels_v4_blend.csv\n"}
+,{"stream_name":"stdout","time":2.459204415,"data":"[cnxt870] holdout n=870 leaked_vs_gold58=0 seed=2026\n"}
+,{"stream_name":"stdout","time":3.499567804,"data":"[cnxt870] staged holdout comp studies=870 series_rows=4774\n"}
+,{"stream_name":"stdout","time":3.503381828,"data":"[cnxt870] found cnxt_v0_fold0.pt at /kaggle/input/datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader/cnxt_v0_fold0.pt\n"}
+,{"stream_name":"stderr","time":5.112538627,"data":"WARNING: Requirement 'pylibjpeg_openjpeg-2.6.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl' looks like a filename, but the file does not exist\n"}
+,{"stream_name":"stderr","time":5.113966601,"data":"WARNING: Requirement 'pylibjpeg_libjpeg-2.4.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl' looks like a filename, but the file does not exist\n"}
+,{"stream_name":"stderr","time":5.114627785,"data":"WARNING: Requirement 'pylibjpeg-2.1.0-py3-none-any.whl' looks like a filename, but the file does not exist\n"}
+,{"stream_name":"stderr","time":5.115209548,"data":"WARNING: Requirement 'pylibjpeg_libjpeg-2.4.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl' looks like a filename, but the file does not exist\n"}
+,{"stream_name":"stderr","time":5.115749473,"data":"WARNING: Requirement 'pylibjpeg_openjpeg-2.6.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl' looks like a filename, but the file does not exist\n"}
+,{"stream_name":"stderr","time":5.14540216,"data":"ERROR: pylibjpeg_openjpeg-2.6.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl is not a supported wheel on this platform.\n"}
+,{"stream_name":"stdout","time":5.214231272,"data":"[cnxt870] running reader: /usr/bin/python3 /kaggle/working/own_src/infer.py /kaggle/working/_holdout_comp test /kaggle/working/_own.csv /kaggle/input/datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader/cnxt_v0_fold0.pt ... +3 ckpts\n"}
+,{"stream_name":"stdout","time":5.214274356,"data":"[cnxt870] pre-infer elapsed=3.0s budget=5400s\n"}
+,{"stream_name":"stdout","time":810.736504016,"data":"wrote /kaggle/working/_own.csv\n"}
+,{"stream_name":"stdout","time":815.356328439,"data":"[cnxt870] removed _own.csv. DO NOT SUBMIT.\n"}
+,{"stream_name":"stdout","time":815.356367728,"data":"[cnxt870] wrote /kaggle/working/convnext_holdout870.csv rows=870. DO NOT SUBMIT.\n"}
+,{"stream_name":"stdout","time":815.35637287,"data":"[cnxt870] done elapsed=813.1s budget=5400s\n"}
+,{"stream_name":"stderr","time":817.606829232,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":817.606875117,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":817.870168606,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":817.870197981,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":818.74915659,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":819.772175727,"data":"[NbConvertApp] Writing 323204 bytes to __results__.html\n"}
+]

@@ -1,0 +1,13 @@
+[{"stream_name":"stdout","time":12.732391526,"data":"clean_option reader_alone\n"}
+,{"stream_name":"stdout","time":28.504694896,"data":"device cpu\n"}
+,{"stream_name":"stdout","time":30.55674305,"data":"loaded cnxt_v0_fold0.pt backbone convnext_tiny res 256\n"}
+,{"stream_name":"stdout","time":70.446462661,"data":"studies 3/3\n"}
+,{"stream_name":"stdout","time":70.462220915,"data":"seconds/study 13.302 projected_hours_1300 4.803\n"}
+,{"stream_name":"stdout","time":70.463108794,"data":"wrote /kaggle/working/submission.csv rows 3 cols ['StudyInstanceUID', 'ACL', 'MCL', 'Medial Meniscus', 'Lateral Meniscus', 'Medial OA', 'Lateral OA', 'PF OA', 'Effusion', 'Synovitis', \"Baker's\", 'Contusion', 'Fracture']\n"}
+,{"stream_name":"stderr","time":77.245227638,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":77.245267463,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":77.588286304,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":77.588319028,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":78.537675993,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":80.25571532,"data":"[NbConvertApp] Writing 306818 bytes to __results__.html\n"}
+]

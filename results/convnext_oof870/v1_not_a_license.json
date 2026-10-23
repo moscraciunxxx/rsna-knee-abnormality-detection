@@ -1,0 +1,17 @@
+{
+  "decision": "hold",
+  "keep": "55779066",
+  "do_not_submit_holdout_ids": true,
+  "source": "convnext-oof870-v1",
+  "n_csv": 513,
+  "fold_counts_in_kernel_log": {"0": 176, "1": 158, "2": 179},
+  "local_sklearn": "1.8.0",
+  "local_oof_counts": {"0": 174, "1": 183, "2": 160},
+  "fold_id_agree": "65 of 513",
+  "only_local": 240,
+  "only_csv": 236,
+  "gold_in_csv": 0,
+  "in_holdout": 513,
+  "elapsed_s": 1018.9,
+  "note": "Version 1 recomputed folds on the Kaggle image. That map is not the local sklearn 1.8.0 map, so the csv is not an out-of-fold license. Do not Submit. Do not rank-blend it."
+}

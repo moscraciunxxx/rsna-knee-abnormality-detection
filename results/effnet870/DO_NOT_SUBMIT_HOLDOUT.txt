@@ -1,0 +1,3 @@
+DO NOT SUBMIT vitaliecervinschi/rsna-knee-effnet870.
+Train holdout IDs. Reconstructed geometry. Loss is inconclusive.
+Keep 55779066 unless a local mill-870 join licenses a subset.

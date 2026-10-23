@@ -1,0 +1,1 @@
+{"status": "kill", "epoch": 5, "resumed_from_epoch": 3, "wall_hours": 2.7033247488074834, "oof_rows": 882, "pred_std": 0.2534311631198181, "oof_macro": 0.7502924386192994, "head_lr": 0.0003, "backbone_lr": 3e-05, "train_res": 384, "warmup_steps": 500, "subset_oof": 0.7517405507432158, "floor": 0.78}

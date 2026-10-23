@@ -1,0 +1,1483 @@
+{
+  "gold58": {
+    "note": "radiologist gold labels; nartaa did NOT train on these (but used them for checkpoint selection)",
+    "n": 58,
+    "positives": {
+      "ACL": 24,
+      "MCL": 9,
+      "Medial Meniscus": 26,
+      "Lateral Meniscus": 23,
+      "Medial OA": 15,
+      "Lateral OA": 11,
+      "PF OA": 21,
+      "Effusion": 35,
+      "Synovitis": 27,
+      "Baker's": 12,
+      "Contusion": 19,
+      "Fracture": 18
+    },
+    "standalone": {
+      "mill_v10": {
+        "macro": 0.957515565325961,
+        "per_finding": {
+          "ACL": 0.9828,
+          "MCL": 0.9853,
+          "Medial Meniscus": 0.9916,
+          "Lateral Meniscus": 0.928,
+          "Medial OA": 0.9814,
+          "Lateral OA": 0.9052,
+          "PF OA": 0.8996,
+          "Effusion": 0.9975,
+          "Synovitis": 0.9176,
+          "Baker's": 0.9774,
+          "Contusion": 0.9669,
+          "Fracture": 0.9569
+        }
+      },
+      "nartaa384": {
+        "macro": 0.9229427460977101,
+        "per_finding": {
+          "ACL": 0.9645,
+          "MCL": 0.9433,
+          "Medial Meniscus": 0.982,
+          "Lateral Meniscus": 0.8957,
+          "Medial OA": 0.9814,
+          "Lateral OA": 0.7756,
+          "PF OA": 0.8597,
+          "Effusion": 0.9727,
+          "Synovitis": 0.8292,
+          "Baker's": 0.9764,
+          "Contusion": 0.9366,
+          "Fracture": 0.9583
+        }
+      },
+      "convnext": {
+        "macro": 0.9105330939345023,
+        "per_finding": {
+          "ACL": 0.9657,
+          "MCL": 0.9478,
+          "Medial Meniscus": 0.9591,
+          "Lateral Meniscus": 0.8907,
+          "Medial OA": 0.9659,
+          "Lateral OA": 0.8646,
+          "PF OA": 0.8443,
+          "Effusion": 0.8783,
+          "Synovitis": 0.7575,
+          "Baker's": 0.9764,
+          "Contusion": 0.9622,
+          "Fracture": 0.9139
+        }
+      },
+      "apex_recipe": {
+        "macro": 0.924042050705599
+      }
+    },
+    "blends": {
+      "mill+nartaa384@0.15": {
+        "macro_gain_point": -0.001943062496633563,
+        "macro_gain_lo95": -0.004971784494326623,
+        "macro_gain_hi95": 0.0007446769020226497,
+        "per_finding_gain_point": {
+          "ACL": -0.0025,
+          "MCL": -0.0034,
+          "Medial Meniscus": 0.0,
+          "Lateral Meniscus": 0.0006,
+          "Medial OA": 0.0,
+          "Lateral OA": -0.0097,
+          "PF OA": -0.0051,
+          "Effusion": 0.0012,
+          "Synovitis": -0.0048,
+          "Baker's": 0.0009,
+          "Contusion": -0.002,
+          "Fracture": 0.0014
+        },
+        "per_finding_gain_lo95": {
+          "ACL": -0.0114,
+          "MCL": -0.0135,
+          "Medial Meniscus": -0.0072,
+          "Lateral Meniscus": -0.0155,
+          "Medial OA": -0.0,
+          "Lateral OA": -0.0308,
+          "PF OA": -0.0158,
+          "Effusion": -0.0,
+          "Synovitis": -0.0162,
+          "Baker's": -0.0051,
+          "Contusion": -0.0146,
+          "Fracture": -0.0
+        }
+      },
+      "mill+nartaa384@0.3": {
+        "macro_gain_point": -0.004789173063744712,
+        "macro_gain_lo95": -0.01022110299311911,
+        "macro_gain_hi95": 0.000634264135674488,
+        "per_finding_gain_point": {
+          "ACL": -0.0012,
+          "MCL": -0.0079,
+          "Medial Meniscus": 0.0,
+          "Lateral Meniscus": 0.0025,
+          "Medial OA": 0.0,
+          "Lateral OA": -0.0348,
+          "PF OA": -0.009,
+          "Effusion": 0.0,
+          "Synovitis": -0.0155,
+          "Baker's": 0.0009,
+          "Contusion": -0.0007,
+          "Fracture": 0.0083
+        },
+        "per_finding_gain_lo95": {
+          "ACL": -0.0109,
+          "MCL": -0.0256,
+          "Medial Meniscus": -0.0096,
+          "Lateral Meniscus": -0.0193,
+          "Medial OA": -0.0,
+          "Lateral OA": -0.0759,
+          "PF OA": -0.0265,
+          "Effusion": -0.0073,
+          "Synovitis": -0.0386,
+          "Baker's": -0.0128,
+          "Contusion": -0.0172,
+          "Fracture": -0.0078
+        }
+      },
+      "mill+nartaa384@0.5": {
+        "macro_gain_point": -0.011314662593184255,
+        "macro_gain_lo95": -0.0212477168528042,
+        "macro_gain_hi95": -0.0017775070180884721,
+        "per_finding_gain_point": {
+          "ACL": -0.0037,
+          "MCL": -0.0181,
+          "Medial Meniscus": -0.0024,
+          "Lateral Meniscus": -0.0025,
+          "Medial OA": 0.0031,
+          "Lateral OA": -0.0619,
+          "PF OA": -0.0193,
+          "Effusion": -0.0012,
+          "Synovitis": -0.0329,
+          "Baker's": 0.0009,
+          "Contusion": -0.0047,
+          "Fracture": 0.0069
+        },
+        "per_finding_gain_lo95": {
+          "ACL": -0.025,
+          "MCL": -0.049,
+          "Medial Meniscus": -0.0162,
+          "Lateral Meniscus": -0.0478,
+          "Medial OA": -0.0077,
+          "Lateral OA": -0.1289,
+          "PF OA": -0.0474,
+          "Effusion": -0.0124,
+          "Synovitis": -0.0824,
+          "Baker's": -0.0128,
+          "Contusion": -0.0379,
+          "Fracture": -0.0197
+        }
+      },
+      "mill+nartaa384@0.7": {
+        "macro_gain_point": -0.018367212238481923,
+        "macro_gain_lo95": -0.032830642927794765,
+        "macro_gain_hi95": -0.004520644125282245,
+        "per_finding_gain_point": {
+          "ACL": -0.0098,
+          "MCL": -0.0227,
+          "Medial Meniscus": -0.0036,
+          "Lateral Meniscus": -0.0149,
+          "Medial OA": 0.0062,
+          "Lateral OA": -0.089,
+          "PF OA": -0.0238,
+          "Effusion": -0.0075,
+          "Synovitis": -0.0514,
+          "Baker's": -0.0009,
+          "Contusion": -0.0128,
+          "Fracture": 0.0097
+        },
+        "per_finding_gain_lo95": {
+          "ACL": -0.0467,
+          "MCL": -0.0567,
+          "Medial Meniscus": -0.0214,
+          "Lateral Meniscus": -0.08,
+          "Medial OA": -0.0057,
+          "Lateral OA": -0.1905,
+          "PF OA": -0.0574,
+          "Effusion": -0.0278,
+          "Synovitis": -0.1147,
+          "Baker's": -0.0148,
+          "Contusion": -0.0573,
+          "Fracture": -0.0171
+        }
+      },
+      "mill+nartaa384@1.0": {
+        "macro_gain_point": -0.03457281922825095,
+        "macro_gain_lo95": -0.054151739580601106,
+        "macro_gain_hi95": -0.01699341815679929,
+        "per_finding_gain_point": {
+          "ACL": -0.0184,
+          "MCL": -0.042,
+          "Medial Meniscus": -0.0096,
+          "Lateral Meniscus": -0.0323,
+          "Medial OA": 0.0,
+          "Lateral OA": -0.1296,
+          "PF OA": -0.0399,
+          "Effusion": -0.0248,
+          "Synovitis": -0.0884,
+          "Baker's": -0.0009,
+          "Contusion": -0.0304,
+          "Fracture": 0.0014
+        },
+        "per_finding_gain_lo95": {
+          "ACL": -0.0711,
+          "MCL": -0.093,
+          "Medial Meniscus": -0.0345,
+          "Lateral Meniscus": -0.1164,
+          "Medial OA": -0.0224,
+          "Lateral OA": -0.2537,
+          "PF OA": -0.0884,
+          "Effusion": -0.0659,
+          "Synovitis": -0.1782,
+          "Baker's": -0.0148,
+          "Contusion": -0.0909,
+          "Fracture": -0.0351
+        }
+      },
+      "mill+convnext@0.15": {
+        "macro_gain_point": -0.002338500481420369,
+        "macro_gain_lo95": -0.005399907979378249,
+        "macro_gain_hi95": 0.0006355206385006778,
+        "per_finding_gain_point": {
+          "ACL": -0.0025,
+          "MCL": -0.0011,
+          "Medial Meniscus": -0.0012,
+          "Lateral Meniscus": 0.0,
+          "Medial OA": 0.0,
+          "Lateral OA": -0.0019,
+          "PF OA": -0.0039,
+          "Effusion": -0.0025,
+          "Synovitis": -0.0119,
+          "Baker's": -0.0009,
+          "Contusion": 0.002,
+          "Fracture": -0.0042
+        },
+        "per_finding_gain_lo95": {
+          "ACL": -0.0114,
+          "MCL": -0.0121,
+          "Medial Meniscus": -0.0072,
+          "Lateral Meniscus": -0.0133,
+          "Medial OA": -0.0,
+          "Lateral OA": -0.0181,
+          "PF OA": -0.0158,
+          "Effusion": -0.0123,
+          "Synovitis": -0.0325,
+          "Baker's": -0.0068,
+          "Contusion": -0.0073,
+          "Fracture": -0.0179
+        }
+      },
+      "mill+convnext@0.3": {
+        "macro_gain_point": -0.005074542408326166,
+        "macro_gain_lo95": -0.0106503612538449,
+        "macro_gain_hi95": -6.182052287574212e-05,
+        "per_finding_gain_point": {
+          "ACL": -0.0025,
+          "MCL": -0.0034,
+          "Medial Meniscus": -0.0036,
+          "Lateral Meniscus": -0.0019,
+          "Medial OA": 0.0,
+          "Lateral OA": -0.0039,
+          "PF OA": -0.0142,
+          "Effusion": -0.0075,
+          "Synovitis": -0.0227,
+          "Baker's": 0.0009,
+          "Contusion": 0.0074,
+          "Fracture": -0.0097
+        },
+        "per_finding_gain_lo95": {
+          "ACL": -0.0126,
+          "MCL": -0.0213,
+          "Medial Meniscus": -0.0167,
+          "Lateral Meniscus": -0.0218,
+          "Medial OA": -0.0,
+          "Lateral OA": -0.0238,
+          "PF OA": -0.0358,
+          "Effusion": -0.0274,
+          "Synovitis": -0.0582,
+          "Baker's": -0.0057,
+          "Contusion": -0.0049,
+          "Fracture": -0.0288
+        }
+      },
+      "mill+convnext@0.5": {
+        "macro_gain_point": -0.01608999404956235,
+        "macro_gain_lo95": -0.025677317902468265,
+        "macro_gain_hi95": -0.007557125635125644,
+        "per_finding_gain_point": {
+          "ACL": -0.008,
+          "MCL": -0.0102,
+          "Medial Meniscus": -0.0144,
+          "Lateral Meniscus": -0.0093,
+          "Medial OA": -0.0039,
+          "Lateral OA": -0.0126,
+          "PF OA": -0.0257,
+          "Effusion": -0.0472,
+          "Synovitis": -0.046,
+          "Baker's": -0.0018,
+          "Contusion": 0.0027,
+          "Fracture": -0.0167
+        },
+        "per_finding_gain_lo95": {
+          "ACL": -0.0286,
+          "MCL": -0.035,
+          "Medial Meniscus": -0.0373,
+          "Lateral Meniscus": -0.0486,
+          "Medial OA": -0.019,
+          "Lateral OA": -0.0484,
+          "PF OA": -0.0538,
+          "Effusion": -0.1188,
+          "Synovitis": -0.0998,
+          "Baker's": -0.0144,
+          "Contusion": -0.016,
+          "Fracture": -0.0445
+        }
+      },
+      "mill+convnext@0.7": {
+        "macro_gain_point": -0.029012994743265796,
+        "macro_gain_lo95": -0.04400132297205617,
+        "macro_gain_hi95": -0.01595165993894294,
+        "per_finding_gain_point": {
+          "ACL": -0.011,
+          "MCL": -0.0261,
+          "Medial Meniscus": -0.0204,
+          "Lateral Meniscus": -0.0186,
+          "Medial OA": -0.0124,
+          "Lateral OA": -0.029,
+          "PF OA": -0.0373,
+          "Effusion": -0.072,
+          "Synovitis": -0.0956,
+          "Baker's": -0.0027,
+          "Contusion": -0.0007,
+          "Fracture": -0.0222
+        },
+        "per_finding_gain_lo95": {
+          "ACL": -0.0361,
+          "MCL": -0.0652,
+          "Medial Meniscus": -0.0515,
+          "Lateral Meniscus": -0.0675,
+          "Medial OA": -0.0432,
+          "Lateral OA": -0.0953,
+          "PF OA": -0.0722,
+          "Effusion": -0.1697,
+          "Synovitis": -0.1833,
+          "Baker's": -0.0196,
+          "Contusion": -0.0253,
+          "Fracture": -0.0567
+        }
+      },
+      "mill+convnext@1.0": {
+        "macro_gain_point": -0.046982471391458724,
+        "macro_gain_lo95": -0.06848499724669943,
+        "macro_gain_hi95": -0.028738724192014523,
+        "per_finding_gain_point": {
+          "ACL": -0.0172,
+          "MCL": -0.0374,
+          "Medial Meniscus": -0.0325,
+          "Lateral Meniscus": -0.0373,
+          "Medial OA": -0.0155,
+          "Lateral OA": -0.0406,
+          "PF OA": -0.0553,
+          "Effusion": -0.1193,
+          "Synovitis": -0.1601,
+          "Baker's": -0.0009,
+          "Contusion": -0.0047,
+          "Fracture": -0.0431
+        },
+        "per_finding_gain_lo95": {
+          "ACL": -0.0556,
+          "MCL": -0.0852,
+          "Medial Meniscus": -0.0785,
+          "Lateral Meniscus": -0.1039,
+          "Medial OA": -0.0522,
+          "Lateral OA": -0.12,
+          "PF OA": -0.1,
+          "Effusion": -0.2497,
+          "Synovitis": -0.272,
+          "Baker's": -0.0188,
+          "Contusion": -0.039,
+          "Fracture": -0.096
+        }
+      },
+      "apex_recipe(nartaa+convnext)_vs_mill": {
+        "macro_gain_point": -0.03347351462036208,
+        "macro_gain_lo95": -0.052888147060356355,
+        "macro_gain_hi95": -0.016315505146443456,
+        "per_finding_gain_point": {
+          "ACL": -0.0147,
+          "MCL": -0.0351,
+          "Medial Meniscus": -0.0126,
+          "Lateral Meniscus": -0.0311,
+          "Medial OA": -0.0016,
+          "Lateral OA": -0.1238,
+          "PF OA": -0.0399,
+          "Effusion": -0.0261,
+          "Synovitis": -0.0896,
+          "Baker's": -0.0009,
+          "Contusion": -0.0263,
+          "Fracture": 0.0
+        },
+        "per_finding_gain_lo95": {
+          "ACL": -0.0625,
+          "MCL": -0.0802,
+          "Medial Meniscus": -0.0409,
+          "Lateral Meniscus": -0.1155,
+          "Medial OA": -0.0248,
+          "Lateral OA": -0.2391,
+          "PF OA": -0.0854,
+          "Effusion": -0.0685,
+          "Synovitis": -0.1783,
+          "Baker's": -0.0148,
+          "Contusion": -0.0783,
+          "Fracture": -0.039
+        }
+      },
+      "apex_recipe_vs_nartaa_alone": {
+        "macro_gain_point": 0.0010993046078888735,
+        "macro_gain_lo95": -0.000994926437277613,
+        "macro_gain_hi95": 0.0035186455416490233,
+        "per_finding_gain_point": {
+          "ACL": 0.0037,
+          "MCL": 0.0068,
+          "Medial Meniscus": -0.003,
+          "Lateral Meniscus": 0.0012,
+          "Medial OA": -0.0016,
+          "Lateral OA": 0.0058,
+          "PF OA": 0.0,
+          "Effusion": -0.0012,
+          "Synovitis": -0.0012,
+          "Baker's": 0.0,
+          "Contusion": 0.004,
+          "Fracture": -0.0014
+        },
+        "per_finding_gain_lo95": {
+          "ACL": -0.0,
+          "MCL": -0.0,
+          "Medial Meniscus": -0.012,
+          "Lateral Meniscus": -0.0064,
+          "Medial OA": -0.0118,
+          "Lateral OA": -0.0,
+          "PF OA": -0.0097,
+          "Effusion": -0.0074,
+          "Synovitis": -0.0053,
+          "Baker's": -0.0,
+          "Contusion": -0.0093,
+          "Fracture": -0.0109
+        }
+      },
+      "mill+nartaa@0.3+convnext@0.15": {
+        "macro_gain_point": -0.007204222019946749,
+        "macro_gain_lo95": -0.013494311494205213,
+        "macro_gain_hi95": -0.0011171653251580609,
+        "per_finding_gain_point": {
+          "ACL": -0.0025,
+          "MCL": -0.0102,
+          "Medial Meniscus": -0.0048,
+          "Lateral Meniscus": 0.0,
+          "Medial OA": 0.0,
+          "Lateral OA": -0.0309,
+          "PF OA": -0.0129,
+          "Effusion": -0.0006,
+          "Synovitis": -0.0275,
+          "Baker's": 0.0009,
+          "Contusion": 0.002,
+          "Fracture": 0.0
+        },
+        "per_finding_gain_lo95": {
+          "ACL": -0.0149,
+          "MCL": -0.0302,
+          "Medial Meniscus": -0.0214,
+          "Lateral Meniscus": -0.0257,
+          "Medial OA": -0.0,
+          "Lateral OA": -0.0726,
+          "PF OA": -0.0308,
+          "Effusion": -0.0088,
+          "Synovitis": -0.0637,
+          "Baker's": -0.0128,
+          "Contusion": -0.0155,
+          "Fracture": -0.0189
+        }
+      },
+      "mill+nartaa@0.5+convnext@0.15": {
+        "macro_gain_point": -0.013573337533059227,
+        "macro_gain_lo95": -0.024273489193801307,
+        "macro_gain_hi95": -0.0036680607657311472,
+        "per_finding_gain_point": {
+          "ACL": -0.0049,
+          "MCL": -0.0193,
+          "Medial Meniscus": -0.0036,
+          "Lateral Meniscus": -0.0025,
+          "Medial OA": 0.0031,
+          "Lateral OA": -0.0619,
+          "PF OA": -0.0257,
+          "Effusion": -0.0025,
+          "Synovitis": -0.0418,
+          "Baker's": 0.0009,
+          "Contusion": -0.0061,
+          "Fracture": 0.0014
+        },
+        "per_finding_gain_lo95": {
+          "ACL": -0.0279,
+          "MCL": -0.048,
+          "Medial Meniscus": -0.0208,
+          "Lateral Meniscus": -0.0493,
+          "Medial OA": -0.0,
+          "Lateral OA": -0.1317,
+          "PF OA": -0.0543,
+          "Effusion": -0.018,
+          "Synovitis": -0.0946,
+          "Baker's": -0.0128,
+          "Contusion": -0.0411,
+          "Fracture": -0.0238
+        }
+      }
+    }
+  },
+  "holdout870": {
+    "note": "LLM-soft v4>=0.5 labels; CONTAMINATED: nartaa 'alldata' trained on these studies",
+    "n": 870,
+    "positives": {
+      "ACL": 187,
+      "MCL": 122,
+      "Medial Meniscus": 366,
+      "Lateral Meniscus": 148,
+      "Medial OA": 331,
+      "Lateral OA": 248,
+      "PF OA": 402,
+      "Effusion": 523,
+      "Synovitis": 104,
+      "Baker's": 234,
+      "Contusion": 153,
+      "Fracture": 64
+    },
+    "standalone": {
+      "mill_v10": {
+        "macro": 0.9262059601427793,
+        "per_finding": {
+          "ACL": 0.9392,
+          "MCL": 0.8836,
+          "Medial Meniscus": 0.9411,
+          "Lateral Meniscus": 0.96,
+          "Medial OA": 0.9251,
+          "Lateral OA": 0.9218,
+          "PF OA": 0.9167,
+          "Effusion": 0.8977,
+          "Synovitis": 0.9075,
+          "Baker's": 0.9685,
+          "Contusion": 0.907,
+          "Fracture": 0.9463
+        }
+      },
+      "nartaa384": {
+        "macro": 0.9225553237082869,
+        "per_finding": {
+          "ACL": 0.9437,
+          "MCL": 0.8881,
+          "Medial Meniscus": 0.9449,
+          "Lateral Meniscus": 0.9683,
+          "Medial OA": 0.9123,
+          "Lateral OA": 0.9068,
+          "PF OA": 0.901,
+          "Effusion": 0.8943,
+          "Synovitis": 0.9212,
+          "Baker's": 0.9553,
+          "Contusion": 0.925,
+          "Fracture": 0.9098
+        }
+      },
+      "convnext_gate": {
+        "macro": 0.9439456543904313,
+        "per_finding": {
+          "ACL": 0.9673,
+          "MCL": 0.9189,
+          "Medial Meniscus": 0.9554,
+          "Lateral Meniscus": 0.9586,
+          "Medial OA": 0.9346,
+          "Lateral OA": 0.9202,
+          "PF OA": 0.9318,
+          "Effusion": 0.9499,
+          "Synovitis": 0.9621,
+          "Baker's": 0.9745,
+          "Contusion": 0.9147,
+          "Fracture": 0.9393
+        }
+      }
+    },
+    "blends": {
+      "mill+nartaa384@0.15": {
+        "macro_gain_point": 0.001781149884812816,
+        "macro_gain_lo95": 0.001209157979834788,
+        "macro_gain_hi95": 0.0023636569869450786,
+        "per_finding_gain_point": {
+          "ACL": 0.0041,
+          "MCL": 0.0035,
+          "Medial Meniscus": 0.0026,
+          "Lateral Meniscus": 0.0042,
+          "Medial OA": -0.0004,
+          "Lateral OA": -0.0001,
+          "PF OA": 0.0005,
+          "Effusion": 0.0017,
+          "Synovitis": 0.0041,
+          "Baker's": 0.0003,
+          "Contusion": 0.0044,
+          "Fracture": -0.0037
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0024,
+          "MCL": 0.0011,
+          "Medial Meniscus": 0.0013,
+          "Lateral Meniscus": 0.0025,
+          "Medial OA": -0.0015,
+          "Lateral OA": -0.0017,
+          "PF OA": -0.0012,
+          "Effusion": 0.0001,
+          "Synovitis": 0.0021,
+          "Baker's": -0.0015,
+          "Contusion": 0.0022,
+          "Fracture": -0.007
+        }
+      },
+      "mill+nartaa384@0.3": {
+        "macro_gain_point": 0.0028600432953492794,
+        "macro_gain_lo95": 0.0017480580541443774,
+        "macro_gain_hi95": 0.004043637370363023,
+        "per_finding_gain_point": {
+          "ACL": 0.0072,
+          "MCL": 0.0067,
+          "Medial Meniscus": 0.0043,
+          "Lateral Meniscus": 0.0072,
+          "Medial OA": -0.0016,
+          "Lateral OA": -0.0008,
+          "PF OA": 0.0004,
+          "Effusion": 0.0026,
+          "Synovitis": 0.0078,
+          "Baker's": 0.0002,
+          "Contusion": 0.0086,
+          "Fracture": -0.0082
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0039,
+          "MCL": 0.0023,
+          "Medial Meniscus": 0.0018,
+          "Lateral Meniscus": 0.0039,
+          "Medial OA": -0.0037,
+          "Lateral OA": -0.0037,
+          "PF OA": -0.0031,
+          "Effusion": -0.0003,
+          "Synovitis": 0.0039,
+          "Baker's": -0.0034,
+          "Contusion": 0.0042,
+          "Fracture": -0.0145
+        }
+      },
+      "mill+nartaa384@0.5": {
+        "macro_gain_point": 0.002855255391220113,
+        "macro_gain_lo95": 0.0009689740274296449,
+        "macro_gain_hi95": 0.004765187384529703,
+        "per_finding_gain_point": {
+          "ACL": 0.0091,
+          "MCL": 0.0087,
+          "Medial Meniscus": 0.0059,
+          "Lateral Meniscus": 0.0099,
+          "Medial OA": -0.0037,
+          "Lateral OA": -0.0029,
+          "PF OA": -0.002,
+          "Effusion": 0.0026,
+          "Synovitis": 0.0111,
+          "Baker's": -0.0018,
+          "Contusion": 0.0129,
+          "Fracture": -0.0156
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0036,
+          "MCL": 0.0019,
+          "Medial Meniscus": 0.0019,
+          "Lateral Meniscus": 0.0048,
+          "Medial OA": -0.0076,
+          "Lateral OA": -0.0077,
+          "PF OA": -0.0075,
+          "Effusion": -0.0024,
+          "Synovitis": 0.0051,
+          "Baker's": -0.0076,
+          "Contusion": 0.0057,
+          "Fracture": -0.0274
+        }
+      },
+      "mill+nartaa384@0.7": {
+        "macro_gain_point": 0.0012713425425263658,
+        "macro_gain_lo95": -0.001384034325030148,
+        "macro_gain_hi95": 0.003933905249450015,
+        "per_finding_gain_point": {
+          "ACL": 0.0088,
+          "MCL": 0.0082,
+          "Medial Meniscus": 0.0058,
+          "Lateral Meniscus": 0.0109,
+          "Medial OA": -0.007,
+          "Lateral OA": -0.0067,
+          "PF OA": -0.0062,
+          "Effusion": 0.0013,
+          "Synovitis": 0.0135,
+          "Baker's": -0.0052,
+          "Contusion": 0.0155,
+          "Fracture": -0.0236
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0017,
+          "MCL": -0.0012,
+          "Medial Meniscus": 0.0002,
+          "Lateral Meniscus": 0.0043,
+          "Medial OA": -0.0124,
+          "Lateral OA": -0.0137,
+          "PF OA": -0.0141,
+          "Effusion": -0.0054,
+          "Synovitis": 0.0053,
+          "Baker's": -0.0136,
+          "Contusion": 0.0054,
+          "Fracture": -0.0404
+        }
+      },
+      "mill+nartaa384@1.0": {
+        "macro_gain_point": -0.0036506364344924824,
+        "macro_gain_lo95": -0.007277982276377354,
+        "macro_gain_hi95": 7.275411787963082e-05,
+        "per_finding_gain_point": {
+          "ACL": 0.0045,
+          "MCL": 0.0045,
+          "Medial Meniscus": 0.0038,
+          "Lateral Meniscus": 0.0084,
+          "Medial OA": -0.0128,
+          "Lateral OA": -0.015,
+          "PF OA": -0.0157,
+          "Effusion": -0.0034,
+          "Synovitis": 0.0136,
+          "Baker's": -0.0132,
+          "Contusion": 0.0179,
+          "Fracture": -0.0365
+        },
+        "per_finding_gain_lo95": {
+          "ACL": -0.0055,
+          "MCL": -0.0087,
+          "Medial Meniscus": -0.0039,
+          "Lateral Meniscus": -0.0008,
+          "Medial OA": -0.02,
+          "Lateral OA": -0.025,
+          "PF OA": -0.0271,
+          "Effusion": -0.0131,
+          "Synovitis": 0.0021,
+          "Baker's": -0.0251,
+          "Contusion": 0.0035,
+          "Fracture": -0.0599
+        }
+      },
+      "mill+convnext_gate@0.15": {
+        "macro_gain_point": 0.005645154015515352,
+        "macro_gain_lo95": 0.004975032617796219,
+        "macro_gain_hi95": 0.0063400816718382404,
+        "per_finding_gain_point": {
+          "ACL": 0.0067,
+          "MCL": 0.0088,
+          "Medial Meniscus": 0.0041,
+          "Lateral Meniscus": 0.0031,
+          "Medial OA": 0.0032,
+          "Lateral OA": 0.0019,
+          "PF OA": 0.0055,
+          "Effusion": 0.0128,
+          "Synovitis": 0.0134,
+          "Baker's": 0.0036,
+          "Contusion": 0.0034,
+          "Fracture": 0.0013
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0043,
+          "MCL": 0.0055,
+          "Medial Meniscus": 0.0026,
+          "Lateral Meniscus": 0.0014,
+          "Medial OA": 0.002,
+          "Lateral OA": 0.0001,
+          "PF OA": 0.0038,
+          "Effusion": 0.0104,
+          "Synovitis": 0.0104,
+          "Baker's": 0.002,
+          "Contusion": 0.0008,
+          "Fracture": -0.0013
+        }
+      },
+      "mill+convnext_gate@0.3": {
+        "macro_gain_point": 0.010366590628267724,
+        "macro_gain_lo95": 0.009032171316429815,
+        "macro_gain_hi95": 0.011734220658400121,
+        "per_finding_gain_point": {
+          "ACL": 0.013,
+          "MCL": 0.0168,
+          "Medial Meniscus": 0.0074,
+          "Lateral Meniscus": 0.0046,
+          "Medial OA": 0.006,
+          "Lateral OA": 0.0032,
+          "PF OA": 0.01,
+          "Effusion": 0.0242,
+          "Synovitis": 0.0248,
+          "Baker's": 0.0062,
+          "Contusion": 0.0064,
+          "Fracture": 0.0016
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0084,
+          "MCL": 0.0105,
+          "Medial Meniscus": 0.0047,
+          "Lateral Meniscus": 0.0016,
+          "Medial OA": 0.0036,
+          "Lateral OA": -0.0003,
+          "PF OA": 0.0068,
+          "Effusion": 0.0198,
+          "Synovitis": 0.0187,
+          "Baker's": 0.0032,
+          "Contusion": 0.0011,
+          "Fracture": -0.0036
+        }
+      },
+      "mill+convnext_gate@0.5": {
+        "macro_gain_point": 0.014920153299166294,
+        "macro_gain_lo95": 0.012797539077778275,
+        "macro_gain_hi95": 0.01714894260581947,
+        "per_finding_gain_point": {
+          "ACL": 0.0195,
+          "MCL": 0.0247,
+          "Medial Meniscus": 0.011,
+          "Lateral Meniscus": 0.0053,
+          "Medial OA": 0.0086,
+          "Lateral OA": 0.0036,
+          "PF OA": 0.014,
+          "Effusion": 0.037,
+          "Synovitis": 0.0375,
+          "Baker's": 0.0081,
+          "Contusion": 0.0087,
+          "Fracture": 0.0011
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0121,
+          "MCL": 0.0143,
+          "Medial Meniscus": 0.0064,
+          "Lateral Meniscus": 0.0005,
+          "Medial OA": 0.0046,
+          "Lateral OA": -0.0024,
+          "PF OA": 0.0088,
+          "Effusion": 0.0295,
+          "Synovitis": 0.0277,
+          "Baker's": 0.0029,
+          "Contusion": -0.0001,
+          "Fracture": -0.0074
+        }
+      },
+      "mill+convnext_gate@0.7": {
+        "macro_gain_point": 0.017675233559563575,
+        "macro_gain_lo95": 0.014700758450269863,
+        "macro_gain_hi95": 0.020704178232097803,
+        "per_finding_gain_point": {
+          "ACL": 0.0244,
+          "MCL": 0.0309,
+          "Medial Meniscus": 0.0132,
+          "Lateral Meniscus": 0.0041,
+          "Medial OA": 0.0098,
+          "Lateral OA": 0.0029,
+          "PF OA": 0.0161,
+          "Effusion": 0.046,
+          "Synovitis": 0.0475,
+          "Baker's": 0.0087,
+          "Contusion": 0.0093,
+          "Fracture": -0.0009
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0142,
+          "MCL": 0.0166,
+          "Medial Meniscus": 0.007,
+          "Lateral Meniscus": -0.0026,
+          "Medial OA": 0.0043,
+          "Lateral OA": -0.0053,
+          "PF OA": 0.0088,
+          "Effusion": 0.0362,
+          "Synovitis": 0.0345,
+          "Baker's": 0.0018,
+          "Contusion": -0.003,
+          "Fracture": -0.0126
+        }
+      },
+      "mill+convnext_gate@1.0": {
+        "macro_gain_point": 0.017739694247651983,
+        "macro_gain_lo95": 0.013710784073270107,
+        "macro_gain_hi95": 0.021636496575048902,
+        "per_finding_gain_point": {
+          "ACL": 0.0281,
+          "MCL": 0.0353,
+          "Medial Meniscus": 0.0143,
+          "Lateral Meniscus": -0.0013,
+          "Medial OA": 0.0095,
+          "Lateral OA": -0.0016,
+          "PF OA": 0.0151,
+          "Effusion": 0.0523,
+          "Synovitis": 0.0546,
+          "Baker's": 0.0059,
+          "Contusion": 0.0077,
+          "Fracture": -0.007
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0146,
+          "MCL": 0.0161,
+          "Medial Meniscus": 0.0063,
+          "Lateral Meniscus": -0.0104,
+          "Medial OA": 0.0017,
+          "Lateral OA": -0.0127,
+          "PF OA": 0.0048,
+          "Effusion": 0.0394,
+          "Synovitis": 0.0369,
+          "Baker's": -0.0032,
+          "Contusion": -0.0096,
+          "Fracture": -0.023
+        }
+      }
+    }
+  },
+  "holdout_oof517": {
+    "note": "ConvNeXt is OOF here; nartaa still contaminated",
+    "n": 517,
+    "positives": {
+      "ACL": 118,
+      "MCL": 81,
+      "Medial Meniscus": 213,
+      "Lateral Meniscus": 90,
+      "Medial OA": 186,
+      "Lateral OA": 143,
+      "PF OA": 234,
+      "Effusion": 307,
+      "Synovitis": 52,
+      "Baker's": 135,
+      "Contusion": 87,
+      "Fracture": 35
+    },
+    "standalone": {
+      "mill_v10": {
+        "macro": 0.932564874692681,
+        "per_finding": {
+          "ACL": 0.9341,
+          "MCL": 0.9009,
+          "Medial Meniscus": 0.9554,
+          "Lateral Meniscus": 0.9556,
+          "Medial OA": 0.9301,
+          "Lateral OA": 0.9218,
+          "PF OA": 0.9286,
+          "Effusion": 0.9008,
+          "Synovitis": 0.9299,
+          "Baker's": 0.9667,
+          "Contusion": 0.9294,
+          "Fracture": 0.9374
+        }
+      },
+      "nartaa384": {
+        "macro": 0.9285844203825812,
+        "per_finding": {
+          "ACL": 0.9463,
+          "MCL": 0.908,
+          "Medial Meniscus": 0.958,
+          "Lateral Meniscus": 0.9657,
+          "Medial OA": 0.922,
+          "Lateral OA": 0.9059,
+          "PF OA": 0.9069,
+          "Effusion": 0.9002,
+          "Synovitis": 0.9391,
+          "Baker's": 0.959,
+          "Contusion": 0.9396,
+          "Fracture": 0.8925
+        }
+      },
+      "convnext": {
+        "macro": 0.944651363851214,
+        "per_finding": {
+          "ACL": 0.9648,
+          "MCL": 0.9277,
+          "Medial Meniscus": 0.9668,
+          "Lateral Meniscus": 0.9494,
+          "Medial OA": 0.9468,
+          "Lateral OA": 0.9215,
+          "PF OA": 0.9286,
+          "Effusion": 0.9494,
+          "Synovitis": 0.9598,
+          "Baker's": 0.977,
+          "Contusion": 0.926,
+          "Fracture": 0.918
+        }
+      },
+      "apex_recipe": {
+        "macro": 0.9340507606967835
+      }
+    },
+    "blends": {
+      "mill+nartaa384@0.15": {
+        "macro_gain_point": 0.0017559087412661878,
+        "macro_gain_lo95": 0.0009509222640905867,
+        "macro_gain_hi95": 0.002504473220740594,
+        "per_finding_gain_point": {
+          "ACL": 0.005,
+          "MCL": 0.0038,
+          "Medial Meniscus": 0.0023,
+          "Lateral Meniscus": 0.0046,
+          "Medial OA": 0.0001,
+          "Lateral OA": 0.0002,
+          "PF OA": -0.0001,
+          "Effusion": 0.0013,
+          "Synovitis": 0.0039,
+          "Baker's": 0.0014,
+          "Contusion": 0.0034,
+          "Fracture": -0.0049
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0025,
+          "MCL": 0.001,
+          "Medial Meniscus": 0.0008,
+          "Lateral Meniscus": 0.0021,
+          "Medial OA": -0.0014,
+          "Lateral OA": -0.0022,
+          "PF OA": -0.0021,
+          "Effusion": -0.0006,
+          "Synovitis": 0.0015,
+          "Baker's": -0.0006,
+          "Contusion": 0.001,
+          "Fracture": -0.0099
+        }
+      },
+      "mill+nartaa384@0.3": {
+        "macro_gain_point": 0.002630086191113379,
+        "macro_gain_lo95": 0.001191908768590666,
+        "macro_gain_hi95": 0.004019583544730342,
+        "per_finding_gain_point": {
+          "ACL": 0.009,
+          "MCL": 0.0072,
+          "Medial Meniscus": 0.0036,
+          "Lateral Meniscus": 0.0083,
+          "Medial OA": -0.0001,
+          "Lateral OA": -0.0004,
+          "PF OA": -0.0016,
+          "Effusion": 0.0024,
+          "Synovitis": 0.0065,
+          "Baker's": 0.0022,
+          "Contusion": 0.0061,
+          "Fracture": -0.0116
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0045,
+          "MCL": 0.0021,
+          "Medial Meniscus": 0.0007,
+          "Lateral Meniscus": 0.0035,
+          "Medial OA": -0.003,
+          "Lateral OA": -0.0051,
+          "PF OA": -0.0055,
+          "Effusion": -0.001,
+          "Synovitis": 0.0024,
+          "Baker's": -0.0017,
+          "Contusion": 0.0016,
+          "Fracture": -0.0217
+        }
+      },
+      "mill+nartaa384@0.5": {
+        "macro_gain_point": 0.002639307748091846,
+        "macro_gain_lo95": 0.00040817192417650917,
+        "macro_gain_hi95": 0.00488264674022481,
+        "per_finding_gain_point": {
+          "ACL": 0.0124,
+          "MCL": 0.0091,
+          "Medial Meniscus": 0.0045,
+          "Lateral Meniscus": 0.0115,
+          "Medial OA": -0.0014,
+          "Lateral OA": -0.0029,
+          "PF OA": -0.0047,
+          "Effusion": 0.0034,
+          "Synovitis": 0.0095,
+          "Baker's": 0.0016,
+          "Contusion": 0.008,
+          "Fracture": -0.0194
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0058,
+          "MCL": 0.0013,
+          "Medial Meniscus": 0.0,
+          "Lateral Meniscus": 0.0042,
+          "Medial OA": -0.0064,
+          "Lateral OA": -0.01,
+          "PF OA": -0.0108,
+          "Effusion": -0.0023,
+          "Synovitis": 0.0027,
+          "Baker's": -0.0046,
+          "Contusion": 0.0006,
+          "Fracture": -0.0364
+        }
+      },
+      "mill+nartaa384@0.7": {
+        "macro_gain_point": 0.0011993425684788672,
+        "macro_gain_lo95": -0.0019688256890053853,
+        "macro_gain_hi95": 0.004304167893003363,
+        "per_finding_gain_point": {
+          "ACL": 0.0142,
+          "MCL": 0.0102,
+          "Medial Meniscus": 0.0046,
+          "Lateral Meniscus": 0.0127,
+          "Medial OA": -0.0035,
+          "Lateral OA": -0.0068,
+          "PF OA": -0.0101,
+          "Effusion": 0.0026,
+          "Synovitis": 0.0109,
+          "Baker's": -0.0007,
+          "Contusion": 0.0096,
+          "Fracture": -0.0292
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0057,
+          "MCL": -0.0002,
+          "Medial Meniscus": -0.0016,
+          "Lateral Meniscus": 0.0027,
+          "Medial OA": -0.0105,
+          "Lateral OA": -0.0165,
+          "PF OA": -0.0188,
+          "Effusion": -0.0055,
+          "Synovitis": 0.002,
+          "Baker's": -0.0098,
+          "Contusion": -0.0002,
+          "Fracture": -0.0541
+        }
+      },
+      "mill+nartaa384@1.0": {
+        "macro_gain_point": -0.003980454310099857,
+        "macro_gain_lo95": -0.008512465803681143,
+        "macro_gain_hi95": 0.00035336133341470053,
+        "per_finding_gain_point": {
+          "ACL": 0.0121,
+          "MCL": 0.0071,
+          "Medial Meniscus": 0.0025,
+          "Lateral Meniscus": 0.0101,
+          "Medial OA": -0.0081,
+          "Lateral OA": -0.0159,
+          "PF OA": -0.0217,
+          "Effusion": -0.0006,
+          "Synovitis": 0.0091,
+          "Baker's": -0.0076,
+          "Contusion": 0.0101,
+          "Fracture": -0.0449
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0005,
+          "MCL": -0.0077,
+          "Medial Meniscus": -0.0058,
+          "Lateral Meniscus": -0.0032,
+          "Medial OA": -0.0182,
+          "Lateral OA": -0.03,
+          "PF OA": -0.0343,
+          "Effusion": -0.0117,
+          "Synovitis": -0.0028,
+          "Baker's": -0.0205,
+          "Contusion": -0.0035,
+          "Fracture": -0.0787
+        }
+      },
+      "mill+convnext@0.15": {
+        "macro_gain_point": 0.0053921541799990536,
+        "macro_gain_lo95": 0.004415909912878787,
+        "macro_gain_hi95": 0.006322722840995256,
+        "per_finding_gain_point": {
+          "ACL": 0.008,
+          "MCL": 0.0077,
+          "Medial Meniscus": 0.004,
+          "Lateral Meniscus": 0.0032,
+          "Medial OA": 0.0043,
+          "Lateral OA": 0.003,
+          "PF OA": 0.0038,
+          "Effusion": 0.012,
+          "Synovitis": 0.0095,
+          "Baker's": 0.006,
+          "Contusion": 0.003,
+          "Fracture": 0.0001
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0048,
+          "MCL": 0.0043,
+          "Medial Meniscus": 0.0021,
+          "Lateral Meniscus": 0.0007,
+          "Medial OA": 0.0025,
+          "Lateral OA": 0.0002,
+          "PF OA": 0.0013,
+          "Effusion": 0.0089,
+          "Synovitis": 0.0054,
+          "Baker's": 0.0035,
+          "Contusion": 0.0001,
+          "Fracture": -0.0037
+        }
+      },
+      "mill+convnext@0.3": {
+        "macro_gain_point": 0.00966324815887587,
+        "macro_gain_lo95": 0.007844470077035325,
+        "macro_gain_hi95": 0.011487964009092244,
+        "per_finding_gain_point": {
+          "ACL": 0.0149,
+          "MCL": 0.0138,
+          "Medial Meniscus": 0.0074,
+          "Lateral Meniscus": 0.0049,
+          "Medial OA": 0.0077,
+          "Lateral OA": 0.005,
+          "PF OA": 0.0066,
+          "Effusion": 0.0233,
+          "Synovitis": 0.0177,
+          "Baker's": 0.01,
+          "Contusion": 0.0051,
+          "Fracture": -0.0003
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0088,
+          "MCL": 0.0074,
+          "Medial Meniscus": 0.0037,
+          "Lateral Meniscus": 0.0005,
+          "Medial OA": 0.0047,
+          "Lateral OA": 0.0001,
+          "PF OA": 0.0018,
+          "Effusion": 0.0174,
+          "Synovitis": 0.0102,
+          "Baker's": 0.0054,
+          "Contusion": -0.0006,
+          "Fracture": -0.0081
+        }
+      },
+      "mill+convnext@0.5": {
+        "macro_gain_point": 0.013196849787745046,
+        "macro_gain_lo95": 0.010212453186233341,
+        "macro_gain_hi95": 0.015988177035178873,
+        "per_finding_gain_point": {
+          "ACL": 0.0213,
+          "MCL": 0.0205,
+          "Medial Meniscus": 0.0102,
+          "Lateral Meniscus": 0.0052,
+          "Medial OA": 0.0119,
+          "Lateral OA": 0.0062,
+          "PF OA": 0.008,
+          "Effusion": 0.0359,
+          "Synovitis": 0.0247,
+          "Baker's": 0.0126,
+          "Contusion": 0.0053,
+          "Fracture": -0.0033
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0115,
+          "MCL": 0.0102,
+          "Medial Meniscus": 0.0043,
+          "Lateral Meniscus": -0.0014,
+          "Medial OA": 0.007,
+          "Lateral OA": -0.0019,
+          "PF OA": -0.0001,
+          "Effusion": 0.0265,
+          "Synovitis": 0.0131,
+          "Baker's": 0.0054,
+          "Contusion": -0.0046,
+          "Fracture": -0.0161
+        }
+      },
+      "mill+convnext@0.7": {
+        "macro_gain_point": 0.014368135554819084,
+        "macro_gain_lo95": 0.010180488941457594,
+        "macro_gain_hi95": 0.018135670515141665,
+        "per_finding_gain_point": {
+          "ACL": 0.0266,
+          "MCL": 0.0247,
+          "Medial Meniscus": 0.0117,
+          "Lateral Meniscus": 0.0028,
+          "Medial OA": 0.0145,
+          "Lateral OA": 0.0046,
+          "PF OA": 0.0067,
+          "Effusion": 0.0442,
+          "Synovitis": 0.0296,
+          "Baker's": 0.0136,
+          "Contusion": 0.0028,
+          "Fracture": -0.0093
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0134,
+          "MCL": 0.0116,
+          "Medial Meniscus": 0.0035,
+          "Lateral Meniscus": -0.0061,
+          "Medial OA": 0.0076,
+          "Lateral OA": -0.0067,
+          "PF OA": -0.0045,
+          "Effusion": 0.0323,
+          "Synovitis": 0.0143,
+          "Baker's": 0.0037,
+          "Contusion": -0.0118,
+          "Fracture": -0.0277
+        }
+      },
+      "mill+convnext@1.0": {
+        "macro_gain_point": 0.012086489158532943,
+        "macro_gain_lo95": 0.006699070214352188,
+        "macro_gain_hi95": 0.017194189826936476,
+        "per_finding_gain_point": {
+          "ACL": 0.0307,
+          "MCL": 0.0268,
+          "Medial Meniscus": 0.0114,
+          "Lateral Meniscus": -0.0061,
+          "Medial OA": 0.0167,
+          "Lateral OA": -0.0003,
+          "PF OA": 0.0,
+          "Effusion": 0.0486,
+          "Synovitis": 0.0298,
+          "Baker's": 0.0103,
+          "Contusion": -0.0034,
+          "Fracture": -0.0194
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0128,
+          "MCL": 0.0079,
+          "Medial Meniscus": 0.0005,
+          "Lateral Meniscus": -0.0197,
+          "Medial OA": 0.0076,
+          "Lateral OA": -0.0161,
+          "PF OA": -0.0155,
+          "Effusion": 0.0331,
+          "Synovitis": 0.0091,
+          "Baker's": -0.0033,
+          "Contusion": -0.0241,
+          "Fracture": -0.0462
+        }
+      },
+      "apex_recipe(nartaa+convnext)_vs_mill": {
+        "macro_gain_point": 0.001485886004102488,
+        "macro_gain_lo95": -0.002721073878829308,
+        "macro_gain_hi95": 0.005622109354969467,
+        "per_finding_gain_point": {
+          "ACL": 0.0233,
+          "MCL": 0.0168,
+          "Medial Meniscus": 0.0065,
+          "Lateral Meniscus": 0.0107,
+          "Medial OA": 0.0019,
+          "Lateral OA": -0.0132,
+          "PF OA": -0.0171,
+          "Effusion": 0.0025,
+          "Synovitis": 0.0104,
+          "Baker's": 0.0063,
+          "Contusion": 0.011,
+          "Fracture": -0.0414
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0114,
+          "MCL": 0.0031,
+          "Medial Meniscus": -0.0019,
+          "Lateral Meniscus": -0.002,
+          "Medial OA": -0.006,
+          "Lateral OA": -0.0269,
+          "PF OA": -0.0292,
+          "Effusion": -0.0082,
+          "Synovitis": -0.0017,
+          "Baker's": -0.0035,
+          "Contusion": -0.0025,
+          "Fracture": -0.073
+        }
+      },
+      "apex_recipe_vs_nartaa_alone": {
+        "macro_gain_point": 0.005466340314202345,
+        "macro_gain_lo95": 0.004377640807782804,
+        "macro_gain_hi95": 0.0066585958230310684,
+        "per_finding_gain_point": {
+          "ACL": 0.0112,
+          "MCL": 0.0097,
+          "Medial Meniscus": 0.0039,
+          "Lateral Meniscus": 0.0007,
+          "Medial OA": 0.01,
+          "Lateral OA": 0.0027,
+          "PF OA": 0.0046,
+          "Effusion": 0.0031,
+          "Synovitis": 0.0013,
+          "Baker's": 0.014,
+          "Contusion": 0.0009,
+          "Fracture": 0.0036
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0066,
+          "MCL": 0.0055,
+          "Medial Meniscus": 0.0019,
+          "Lateral Meniscus": -0.0007,
+          "Medial OA": 0.0065,
+          "Lateral OA": 0.0014,
+          "PF OA": 0.0029,
+          "Effusion": 0.0021,
+          "Synovitis": 0.0004,
+          "Baker's": 0.008,
+          "Contusion": -0.005,
+          "Fracture": 0.0
+        }
+      },
+      "mill+nartaa@0.3+convnext@0.15": {
+        "macro_gain_point": 0.007010409069919121,
+        "macro_gain_lo95": 0.005325979008396112,
+        "macro_gain_hi95": 0.008728626117306766,
+        "per_finding_gain_point": {
+          "ACL": 0.0148,
+          "MCL": 0.0124,
+          "Medial Meniscus": 0.0066,
+          "Lateral Meniscus": 0.0097,
+          "Medial OA": 0.0046,
+          "Lateral OA": 0.0018,
+          "PF OA": 0.0024,
+          "Effusion": 0.0132,
+          "Synovitis": 0.0141,
+          "Baker's": 0.0076,
+          "Contusion": 0.0073,
+          "Fracture": -0.0104
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0089,
+          "MCL": 0.0065,
+          "Medial Meniscus": 0.0026,
+          "Lateral Meniscus": 0.0042,
+          "Medial OA": 0.0013,
+          "Lateral OA": -0.0033,
+          "PF OA": -0.0022,
+          "Effusion": 0.0088,
+          "Synovitis": 0.0079,
+          "Baker's": 0.0029,
+          "Contusion": 0.0015,
+          "Fracture": -0.0195
+        }
+      },
+      "mill+nartaa@0.5+convnext@0.15": {
+        "macro_gain_point": 0.007094320923750397,
+        "macro_gain_lo95": 0.004706374343613906,
+        "macro_gain_hi95": 0.009529161165432828,
+        "per_finding_gain_point": {
+          "ACL": 0.0179,
+          "MCL": 0.0144,
+          "Medial Meniscus": 0.0068,
+          "Lateral Meniscus": 0.0122,
+          "Medial OA": 0.0036,
+          "Lateral OA": -0.0003,
+          "PF OA": -0.0002,
+          "Effusion": 0.0146,
+          "Synovitis": 0.0166,
+          "Baker's": 0.0067,
+          "Contusion": 0.0094,
+          "Fracture": -0.0165
+        },
+        "per_finding_gain_lo95": {
+          "ACL": 0.0099,
+          "MCL": 0.0062,
+          "Medial Meniscus": 0.0017,
+          "Lateral Meniscus": 0.0045,
+          "Medial OA": -0.0013,
+          "Lateral OA": -0.0073,
+          "PF OA": -0.0066,
+          "Effusion": 0.0084,
+          "Synovitis": 0.0081,
+          "Baker's": 0.0007,
+          "Contusion": 0.0016,
+          "Fracture": -0.031
+        }
+      }
+    }
+  },
+  "do_not_submit": true,
+  "keep": "55779066"
+}

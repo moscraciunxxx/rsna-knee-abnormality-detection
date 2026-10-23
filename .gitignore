@@ -1,0 +1,27 @@
+﻿# Python / tooling
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Competition data, caches and weights are never committed (Kaggle rules)
+data/
+train_subset/
+*.dcm
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.npy
+*.npz
+train_headers.csv
+
+# Secrets
+kaggle.json
+.env

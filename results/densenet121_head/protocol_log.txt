@@ -1,0 +1,9 @@
+fit_n=3479
+holdout_n=870
+gold_n=58
+gold_in_fit=0
+holdout_in_fit=0
+missing_images=0
+gold_macro=0.722506
+abort=False
+DO NOT SUBMIT

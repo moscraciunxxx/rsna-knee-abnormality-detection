@@ -1,0 +1,132 @@
+{
+  "n": 517,
+  "n_boot": 400,
+  "seed": 2026,
+  "do_not_submit": true,
+  "rows": [
+    {
+      "findings": [
+        "ACL",
+        "Effusion"
+      ],
+      "n_findings": 2,
+      "weight": 0.15,
+      "legal": true,
+      "point_macro_delta": 0.0016653246091175022,
+      "ci95_lo": 0.001276449368119692,
+      "ci95_hi": 0.001972693027406097,
+      "clears_0.003": false
+    },
+    {
+      "findings": [
+        "ACL",
+        "Effusion"
+      ],
+      "n_findings": 2,
+      "weight": 0.2,
+      "legal": true,
+      "point_macro_delta": 0.0021964134143304115,
+      "ci95_lo": 0.001699654638277087,
+      "ci95_hi": 0.0026217327062064,
+      "clears_0.003": false
+    },
+    {
+      "findings": [
+        "ACL",
+        "Effusion",
+        "Synovitis",
+        "MCL"
+      ],
+      "n_findings": 4,
+      "weight": 0.15,
+      "legal": true,
+      "point_macro_delta": 0.003102174663655255,
+      "ci95_lo": 0.0024753040159276817,
+      "ci95_hi": 0.0036080106723342803,
+      "clears_0.003": false
+    },
+    {
+      "findings": [
+        "ACL",
+        "Effusion",
+        "Synovitis",
+        "MCL"
+      ],
+      "n_findings": 4,
+      "weight": 0.2,
+      "legal": true,
+      "point_macro_delta": 0.004125160519165227,
+      "ci95_lo": 0.0033132277299428524,
+      "ci95_hi": 0.004798856633615134,
+      "clears_0.003": true
+    },
+    {
+      "findings": [
+        "ACL",
+        "Effusion",
+        "Synovitis",
+        "MCL",
+        "Medial OA"
+      ],
+      "n_findings": 5,
+      "weight": 0.15,
+      "legal": true,
+      "point_macro_delta": 0.0034601915344387724,
+      "ci95_lo": 0.0027953596894532305,
+      "ci95_hi": 0.003944809228252841,
+      "clears_0.003": false
+    },
+    {
+      "findings": [
+        "ACL",
+        "Effusion",
+        "Synovitis",
+        "MCL",
+        "Medial OA"
+      ],
+      "n_findings": 5,
+      "weight": 0.2,
+      "legal": true,
+      "point_macro_delta": 0.004590785485326099,
+      "ci95_lo": 0.0037179405295054953,
+      "ci95_hi": 0.005289571733974688,
+      "clears_0.003": true
+    },
+    {
+      "findings": [
+        "ACL",
+        "Effusion",
+        "Synovitis",
+        "MCL",
+        "Medial OA",
+        "Medial Meniscus",
+        "Baker's"
+      ],
+      "n_findings": 7,
+      "weight": 0.15,
+      "legal": true,
+      "point_macro_delta": 0.004292356884670334,
+      "ci95_lo": 0.003535687958814926,
+      "ci95_hi": 0.0048001959265134035,
+      "clears_0.003": true
+    },
+    {
+      "findings": [
+        "ACL",
+        "Effusion",
+        "Synovitis",
+        "MCL",
+        "Medial OA",
+        "Medial Meniscus",
+        "Baker's"
+      ],
+      "n_findings": 7,
+      "weight": 0.2,
+      "legal": true,
+      "point_macro_delta": 0.005662303520527989,
+      "ci95_lo": 0.004664280783146055,
+      "ci95_hi": 0.006361888557527736,
+      "clears_0.003": true
+    }
+  ]
+}

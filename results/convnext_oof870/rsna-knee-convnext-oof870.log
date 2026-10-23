@@ -1,0 +1,37 @@
+[{"stream_name":"stdout","time":1.722134059,"data":"[cnxt-oof] PRIVATE OOF gate. One left-out fold checkpoint. DO NOT SUBMIT.\n"}
+,{"stream_name":"stdout","time":1.722182444,"data":"[cnxt-oof] Keep 55779066. This file is train IDs, not the hidden test.\n"}
+,{"stream_name":"stdout","time":1.722190662,"data":"[cnxt-oof] start elapsed=0.0s budget=2700s\n"}
+,{"stream_name":"stdout","time":1.722389711,"data":"[cnxt-oof] competition root /kaggle/input/competitions/rsna-knee-abnormality-detection\n"}
+,{"stream_name":"stdout","time":1.903351791,"data":"[cnxt-oof] found llm_labels_v4_blend.csv at /kaggle/input/datasets/stevenleehans/rsna-knee-llm-report-labels/llm_labels_v4_blend.csv\n"}
+,{"stream_name":"stdout","time":1.9678060130000001,"data":"[cnxt-oof] fold=0 n=174\n"}
+,{"stream_name":"stdout","time":1.9678297630000001,"data":"[cnxt-oof] fold=1 n=183\n"}
+,{"stream_name":"stdout","time":1.967834077,"data":"[cnxt-oof] fold=2 n=160\n"}
+,{"stream_name":"stdout","time":1.967837527,"data":"[cnxt-oof] oof_n=517 leaked_vs_gold58=0 holdout_n=870\n"}
+,{"stream_name":"stdout","time":1.970096935,"data":"[cnxt-oof] found cnxt_v0_fold0.pt at /kaggle/input/datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader/cnxt_v0_fold0.pt\n"}
+,{"stream_name":"stderr","time":3.460742616,"data":"WARNING: Requirement 'pylibjpeg_openjpeg-2.6.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl' looks like a filename, but the file does not exist\n"}
+,{"stream_name":"stderr","time":3.46216627,"data":"WARNING: Requirement 'pylibjpeg_libjpeg-2.4.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl' looks like a filename, but the file does not exist\n"}
+,{"stream_name":"stderr","time":3.462735475,"data":"WARNING: Requirement 'pylibjpeg-2.1.0-py3-none-any.whl' looks like a filename, but the file does not exist\n"}
+,{"stream_name":"stderr","time":3.46331314,"data":"WARNING: Requirement 'pylibjpeg_libjpeg-2.4.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl' looks like a filename, but the file does not exist\n"}
+,{"stream_name":"stderr","time":3.463752499,"data":"WARNING: Requirement 'pylibjpeg_openjpeg-2.6.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl' looks like a filename, but the file does not exist\n"}
+,{"stream_name":"stderr","time":3.488635847,"data":"ERROR: pylibjpeg_openjpeg-2.6.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl is not a supported wheel on this platform.\n"}
+,{"stream_name":"stdout","time":3.548778443,"data":"[cnxt-oof] pre-fold-0 elapsed=1.8s budget=2700s\n"}
+,{"stream_name":"stdout","time":3.866308321,"data":"[cnxt-oof] staged studies=174 series_rows=923\n"}
+,{"stream_name":"stdout","time":3.866482901,"data":"[cnxt-oof] infer fold=0 ckpt=cnxt_v0_fold0.pt n=174\n"}
+,{"stream_name":"stdout","time":181.043057047,"data":"wrote /kaggle/working/_fold0.csv\n"}
+,{"stream_name":"stdout","time":184.356979401,"data":"[cnxt-oof] pre-fold-1 elapsed=182.6s budget=2700s\n"}
+,{"stream_name":"stdout","time":184.567944342,"data":"[cnxt-oof] staged studies=183 series_rows=1035\n"}
+,{"stream_name":"stdout","time":184.571325284,"data":"[cnxt-oof] infer fold=1 ckpt=cnxt_v0_fold1.pt n=183\n"}
+,{"stream_name":"stdout","time":367.428280802,"data":"wrote /kaggle/working/_fold1.csv\n"}
+,{"stream_name":"stdout","time":369.030177037,"data":"[cnxt-oof] pre-fold-2 elapsed=367.3s budget=2700s\n"}
+,{"stream_name":"stdout","time":369.229845646,"data":"[cnxt-oof] staged studies=160 series_rows=861\n"}
+,{"stream_name":"stdout","time":369.233107994,"data":"[cnxt-oof] infer fold=2 ckpt=cnxt_v0_fold2.pt n=160\n"}
+,{"stream_name":"stdout","time":514.526196166,"data":"wrote /kaggle/working/_fold2.csv\n"}
+,{"stream_name":"stdout","time":515.965847675,"data":"[cnxt-oof] wrote /kaggle/working/convnext_oof870.csv rows=517. DO NOT SUBMIT.\n"}
+,{"stream_name":"stdout","time":515.965930047,"data":"[cnxt-oof] done elapsed=514.2s budget=2700s\n"}
+,{"stream_name":"stderr","time":517.914227788,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":517.914254401,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":518.129730635,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":518.129759857,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":518.95544184,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":519.842967351,"data":"[NbConvertApp] Writing 391417 bytes to __results__.html\n"}
+]

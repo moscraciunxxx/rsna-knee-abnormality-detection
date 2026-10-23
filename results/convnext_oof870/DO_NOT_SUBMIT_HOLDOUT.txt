@@ -1,0 +1,2 @@
+convnext_oof870.csv is train holdout IDs, not the hidden test.
+Keep 55779066. Do not Submit.

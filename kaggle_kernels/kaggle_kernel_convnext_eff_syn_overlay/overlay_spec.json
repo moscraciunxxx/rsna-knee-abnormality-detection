@@ -1,0 +1,14 @@
+{
+  "decision": "overlay",
+  "keep": "55779066",
+  "source": "convnext-mil870-gate",
+  "do_not_submit_holdout_ids": true,
+  "author_claim_public": 0.944,
+  "author_reader_alone_public": 0.929,
+  "author_claim_is_not_our_cli": true,
+  "findings": [
+    "Effusion",
+    "Synovitis"
+  ],
+  "weight": 0.15
+}

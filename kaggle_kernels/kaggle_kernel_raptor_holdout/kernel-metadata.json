@@ -1,0 +1,23 @@
+{
+  "id": "vitaliecervinschi/rsna-knee-raptor-holdout",
+  "title": "RSNA Knee raptor holdout",
+  "code_file": "main.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": ["gpu"],
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "dreaddevelopment/raptor-knee-widedense",
+    "dreaddevelopment/raptor-knee-native384dense"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461"
+}

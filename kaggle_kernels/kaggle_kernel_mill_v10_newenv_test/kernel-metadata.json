@@ -1,0 +1,27 @@
+{
+  "id": "vitaliecervinschi/rsna-knee-mill-v10-newenv-test",
+  "title": "RSNA Knee mill v10 newenv test",
+  "code_file": "main.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "dreaddevelopment/raptor-knee-maxspan",
+    "dreaddevelopment/raptor-knee-widedense",
+    "tonylica/rsna-knee-bend-dinov3-0917-repro-assets"
+  ],
+  "kernel_sources": [
+    "romantamrazov/rsna-knee-dinosaur-v5-train"
+  ],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [
+    "metaresearch/dinov2/PyTorch/small/1"
+  ],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:2757e0c7d1e0a9cb43da657b97e223c321a98f5014bdf64f44f2f6b083ad2b2f"
+}

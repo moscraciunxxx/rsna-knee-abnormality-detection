@@ -1,0 +1,12 @@
+{
+  "decision": "stop",
+  "keep": "55779066",
+  "source": "densenet121-head870",
+  "do_not_submit_holdout_ids": true,
+  "findings": [],
+  "weight": 0.0,
+  "mill_macro": 0.9262,
+  "densenet_macro": 0.7153,
+  "gold_macro": 0.722506,
+  "gold_abort": false
+}

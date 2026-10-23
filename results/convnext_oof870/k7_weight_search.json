@@ -1,0 +1,118 @@
+{
+  "n": 517,
+  "n_boot": 400,
+  "seed": 2026,
+  "do_not_submit": true,
+  "uniform_0.15_point": 0.004292356884670334,
+  "uniform_0.15_ci95": {
+    "lo": 0.003535687958814926,
+    "hi": 0.0048001959265134035,
+    "mean": 0.0041713326001615635
+  },
+  "chosen_point": 0.01067568991971124,
+  "chosen_ci95": {
+    "lo": 0.008756499588510084,
+    "hi": 0.012288406676698367,
+    "mean": 0.010546623770725539
+  },
+  "gain_vs_0.15_ci95": {
+    "lo": 0.005141208338492562,
+    "hi": 0.007544182326062357,
+    "mean": 0.006375291170563974
+  },
+  "chosen_weights": {
+    "ACL": 0.45,
+    "MCL": 0.45,
+    "Medial Meniscus": 0.45,
+    "Medial OA": 0.45,
+    "Effusion": 0.45,
+    "Synovitis": 0.45,
+    "Baker's": 0.45
+  },
+  "trace": [
+    {
+      "pass": 0,
+      "finding": "ACL",
+      "weight": 0.45,
+      "macro_delta": 0.00528176543429304
+    },
+    {
+      "pass": 0,
+      "finding": "MCL",
+      "weight": 0.45,
+      "macro_delta": 0.006215006269419732
+    },
+    {
+      "pass": 0,
+      "finding": "Medial Meniscus",
+      "weight": 0.45,
+      "macro_delta": 0.006702121210528267
+    },
+    {
+      "pass": 0,
+      "finding": "Medial OA",
+      "weight": 0.45,
+      "macro_delta": 0.007265202564955553
+    },
+    {
+      "pass": 0,
+      "finding": "Effusion",
+      "weight": 0.45,
+      "macro_delta": 0.00902506503328715
+    },
+    {
+      "pass": 0,
+      "finding": "Synovitis",
+      "weight": 0.45,
+      "macro_delta": 0.010179600462016158
+    },
+    {
+      "pass": 0,
+      "finding": "Baker's",
+      "weight": 0.45,
+      "macro_delta": 0.01067568991971124
+    },
+    {
+      "pass": 1,
+      "finding": "ACL",
+      "weight": 0.45,
+      "macro_delta": 0.01067568991971124
+    },
+    {
+      "pass": 1,
+      "finding": "MCL",
+      "weight": 0.45,
+      "macro_delta": 0.01067568991971124
+    },
+    {
+      "pass": 1,
+      "finding": "Medial Meniscus",
+      "weight": 0.45,
+      "macro_delta": 0.01067568991971124
+    },
+    {
+      "pass": 1,
+      "finding": "Medial OA",
+      "weight": 0.45,
+      "macro_delta": 0.01067568991971124
+    },
+    {
+      "pass": 1,
+      "finding": "Effusion",
+      "weight": 0.45,
+      "macro_delta": 0.01067568991971124
+    },
+    {
+      "pass": 1,
+      "finding": "Synovitis",
+      "weight": 0.45,
+      "macro_delta": 0.01067568991971124
+    },
+    {
+      "pass": 1,
+      "finding": "Baker's",
+      "weight": 0.45,
+      "macro_delta": 0.01067568991971124
+    }
+  ]
+}

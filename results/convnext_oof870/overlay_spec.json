@@ -1,0 +1,17 @@
+{
+  "decision": "overlay",
+  "keep": "55779066",
+  "do_not_submit_holdout_ids": true,
+  "source": "convnext-oof870",
+  "n": 517,
+  "findings": [
+    "ACL",
+    "Effusion"
+  ],
+  "weight": 0.15,
+  "mill_macro": 0.932564874692681,
+  "convnext_oof_macro": 0.944651363851214,
+  "note": "Private decide_private_overlay says overlay. Bootstrap 95% CI on the blended macro delta is +0.00127 to +0.00200 (point +0.00167), below the +0.003 bar. TEST kernel not built. Do not Submit.",
+  "test_submit": false,
+  "bootstrap_macro_delta_ci95_lo": 0.001266090368487266
+}

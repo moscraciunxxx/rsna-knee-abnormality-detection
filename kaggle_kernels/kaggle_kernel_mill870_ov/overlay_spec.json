@@ -1,0 +1,10 @@
+{
+  "decision": "stop",
+  "keep": "55779066",
+  "do_not_submit_holdout_ids": true,
+  "source": "probe-b870",
+  "findings": [],
+  "weight": 0.0,
+  "mill_macro": 0.9262059601427793,
+  "probe_macro": 0.7453226015983683
+}

@@ -1,0 +1,28 @@
+[{"stream_name":"stdout","time":22.058785199,"data":"[effnet870] PRIVATE holdout. DO NOT SUBMIT. Reconstructed 4x6 grayscale geometry. Loss is inconclusive.\n"}
+,{"stream_name":"stdout","time":22.498692359,"data":"[effnet870] holdout n=870 gold=58 excluded leaked=0 seed=2026\n"}
+,{"stream_name":"stdout","time":37.518263081,"data":"[effnet870] loaded b0 sz=224 nser=4 nslc=6 strict_ok=1. DO NOT SUBMIT.\n"}
+,{"stream_name":"stdout","time":110.883876614,"data":"[effnet870] 50/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":177.830184747,"data":"[effnet870] 100/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":255.787648958,"data":"[effnet870] 150/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":355.858474758,"data":"[effnet870] 200/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":446.037306289,"data":"[effnet870] 250/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":553.074201528,"data":"[effnet870] 300/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":645.763595315,"data":"[effnet870] 350/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":735.672697352,"data":"[effnet870] 400/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":817.049734075,"data":"[effnet870] 450/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":911.659249727,"data":"[effnet870] 500/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":998.12544076,"data":"[effnet870] 550/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":1092.354092913,"data":"[effnet870] 600/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":1178.761321414,"data":"[effnet870] 650/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":1263.032133734,"data":"[effnet870] 700/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":1359.252686219,"data":"[effnet870] 750/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":1463.651193173,"data":"[effnet870] 800/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":1564.256978677,"data":"[effnet870] 850/870 missing_series=0\n"}
+,{"stream_name":"stdout","time":1609.588953669,"data":"[effnet870] wrote /kaggle/working/effnet_holdout870.csv shape=(870, 13) missing_series=0. DO NOT SUBMIT.\n"}
+,{"stream_name":"stderr","time":1620.670417145,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1620.670465443,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1621.166047112,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1621.16607438,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1622.215609618,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1623.952956108,"data":"[NbConvertApp] Writing 324314 bytes to __results__.html\n"}
+]

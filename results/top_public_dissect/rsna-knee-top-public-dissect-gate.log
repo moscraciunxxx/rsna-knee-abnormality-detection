@@ -1,0 +1,52 @@
+[{"stream_name":"stdout","time":2.93302577,"data":"[dissect] PRIVATE GATE top-public dissect. DO NOT SUBMIT. Keep 55779066. t=0s\n"}
+,{"stream_name":"stdout","time":23.664035142,"data":"[dissect] python 3.12.13 torch 2.10.0+cu128 timm 1.0.26 gpus 2 t=21s\n"}
+,{"stream_name":"stdout","time":23.847941914,"data":"[dissect] found llm_labels_v4_blend.csv at /kaggle/input/datasets/stevenleehans/rsna-knee-llm-report-labels/llm_labels_v4_blend.csv t=21s\n"}
+,{"stream_name":"stdout","time":24.100934661,"data":"[dissect] staged _gold_comp studies=58 series=336 t=21s\n"}
+,{"stream_name":"stdout","time":24.105302613,"data":"[dissect] found cnxt_v0_fold0.pt at /kaggle/input/datasets/goodpjw2008/rsna-knee-2-5d-convnext-reader/cnxt_v0_fold0.pt t=21s\n"}
+,{"stream_name":"stderr","time":25.292009466,"data":"WARNING: Requirement 'pylibjpeg_openjpeg-2.6.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl' looks like a filename, but the file does not exist\n"}
+,{"stream_name":"stderr","time":25.293614098,"data":"WARNING: Requirement 'pylibjpeg-2.1.0-py3-none-any.whl' looks like a filename, but the file does not exist\n"}
+,{"stream_name":"stderr","time":25.294288839,"data":"WARNING: Requirement 'pylibjpeg_libjpeg-2.4.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl' looks like a filename, but the file does not exist\n"}
+,{"stream_name":"stderr","time":25.342655239,"data":"ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: '/kaggle/working/pylibjpeg_openjpeg-2.6.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl'\n"}
+,{"stream_name":"stderr","time":25.34268704,"data":"\n"}
+,{"stream_name":"stdout","time":109.8677073,"data":"wrote /kaggle/working/_own_gold.csv\n"}
+,{"stream_name":"stdout","time":115.108811669,"data":"[dissect] convnext_gold58.csv rows=58 nan=0 t=112s\n"}
+,{"stream_name":"stdout","time":116.176909522,"data":"[dissect] staged _eval_comp studies=928 series=5110 t=113s\n"}
+,{"stream_name":"stdout","time":116.178718644,"data":"[dissect] running nartaa CoAtNet on 928 studies, timeout 5166s t=113s\n"}
+,{"stream_name":"stdout","time":124.984657511,"data":"device cuda | gpus 2 | torch 2.10.0+cu128\n"}
+,{"stream_name":"stdout","time":124.984716666,"data":"test root: /kaggle/working/_eval_comp | series dir: /kaggle/working/_eval_comp/test_series\n"}
+,{"stream_name":"stdout","time":125.420983655,"data":"test studies 928 | test series 5110\n"}
+,{"stream_name":"stdout","time":125.424528516,"data":"XLA unavailable: ModuleNotFoundError No module named 'torch_xla' | device cuda\n"}
+,{"stream_name":"stdout","time":126.260494331,"data":"[weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef\n"}
+,{"stream_name":"stdout","time":128.094380726,"data":"[gpu cuda:0] loaded 1 arm(s) | 3s\n"}
+,{"stream_name":"stdout","time":128.952429855,"data":"[weights] sha256 7e5315dad125b99fc65b340b3de41de628e9be51ff5835355dd61c86472244ef\n"}
+,{"stream_name":"stdout","time":130.664495688,"data":"[gpu cuda:1] loaded 1 arm(s) | 6s\n"}
+,{"stream_name":"stdout","time":387.106348553,"data":"  [pre] 200/928 | 262s\n"}
+,{"stream_name":"stdout","time":448.215013196,"data":"  [gpu] 200/928 | 323s\n"}
+,{"stream_name":"stdout","time":632.234267319,"data":"  [pre] 400/928 | 507s\n"}
+,{"stream_name":"stdout","time":693.892014362,"data":"  [gpu] 400/928 | 569s\n"}
+,{"stream_name":"stdout","time":876.722441278,"data":"  [pre] 600/928 | 752s\n"}
+,{"stream_name":"stdout","time":938.165594052,"data":"  [gpu] 600/928 | 813s\n"}
+,{"stream_name":"stdout","time":1122.880480678,"data":"  [pre] 800/928 | 998s\n"}
+,{"stream_name":"stdout","time":1183.584241546,"data":"  [gpu] 800/928 | 1059s\n"}
+,{"stream_name":"stdout","time":1278.55895728,"data":"  [pre] 928/928 | 1154s\n"}
+,{"stream_name":"stdout","time":1278.769556488,"data":"[pre] done: 928 studies in 1148s (procs 4 x fastread study_lut 32/16 threads)\n"}
+,{"stream_name":"stdout","time":1340.127156153,"data":"  [gpu] 928/928 | 1215s\n"}
+,{"stream_name":"stdout","time":1340.127416927,"data":"[gpu] done: 928/928 studies on 2 device(s) | 1215s\n"}
+,{"stream_name":"stdout","time":1340.354785298,"data":"[blend] weighted rank-mean w={'raptor_ft_alldata_t16_blendjev_oai_d96_r384_swa.pt': np.float64(1.0)}\n"}
+,{"stream_name":"stdout","time":1340.401780894,"data":"wrote /kaggle/working/nartaa384_eval928.csv | 928 rows x 13 cols\n"}
+,{"stream_name":"stdout","time":1340.42412908,"data":"                                                StudyInstanceUID      ACL      MCL  Medial Meniscus  Lateral Meniscus  Medial OA  Lateral OA    PF OA  Effusion  Synovitis  Baker's  Contusion  Fracture\n"}
+,{"stream_name":"stdout","time":1340.424157346,"data":"1.2.826.0.1.3680043.8.498.10095687747295410396510538520594649149 0.596548 0.391586         0.343042          0.836030   0.332255    0.407767 0.303128  0.770227   0.626753 0.059331   0.447681  0.560949\n"}
+,{"stream_name":"stdout","time":1340.424193466,"data":"1.2.826.0.1.3680043.8.498.10170898615867673028696505248839028269 0.503776 0.583603         0.192017          0.829558   0.485437    0.761597 0.887810  0.700108   0.841424 0.243797   0.855448  0.825243\n"}
+,{"stream_name":"stdout","time":1340.424202701,"data":"1.2.826.0.1.3680043.8.498.10306159113324811538703788080836752052 0.779935 0.774542         0.865156          0.822006   0.928803    0.928803 0.874865  0.652643   0.670982 0.731392   0.686084  0.735707\n"}
+,{"stream_name":"stdout","time":1340.424208639,"data":"1.2.826.0.1.3680043.8.498.11287937729196958426538087439102017580 0.716289 0.498382         0.395901          0.573894   0.658037    0.617044 0.527508  0.730313   0.852211 0.379720   0.668824  0.639698\n"}
+,{"stream_name":"stdout","time":1340.424214148,"data":"1.2.826.0.1.3680043.8.498.11382021393803389951964005983002209238 0.951456 0.564186         0.752967          0.636462   0.242718    0.334412 0.065804  0.407767   0.414239 0.212513   0.521036  0.542611\n"}
+,{"stream_name":"stdout","time":1340.424376517,"data":"DONE 1215s\n"}
+,{"stream_name":"stdout","time":1346.756000457,"data":"[dissect] nartaa rc=0 t=1344s\n"}
+,{"stream_name":"stdout","time":1346.773760647,"data":"[dissect] done. DO NOT SUBMIT. t=1344s\n"}
+,{"stream_name":"stderr","time":1350.51023195,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1350.510270543,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1350.836291861,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1350.836320277,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1351.755993146,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1353.218210248,"data":"[NbConvertApp] Writing 362917 bytes to __results__.html\n"}
+]

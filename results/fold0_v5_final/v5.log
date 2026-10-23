@@ -1,0 +1,29 @@
+[{"stream_name":"stdout","time":12.139384849,"data":"resume_path /kaggle/input/rsna-knee-f0-v3-ckpt/fold0_last.pt\n"}
+,{"stream_name":"stdout","time":12.16486042,"data":"fold0_last.pt first_mb_sha256 eb0e7aa36def97fb\n"}
+,{"stream_name":"stdout","time":23.282985128,"data":"python 3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]\n"}
+,{"stream_name":"stdout","time":23.538300637,"data":"torch 2.10.0+cu128 cuda True\n"}
+,{"stream_name":"stdout","time":23.538407157,"data":"timm 1.0.26\n"}
+,{"stream_name":"stdout","time":23.539389271,"data":"arch coatnet_rmlp_2_rw_384.sw_in12k_ft_in1k img 384 train_res 384 k_train 8 fold 0 head_lr 0.0003 backbone_lr 3e-05 warmup 500\n"}
+,{"stream_name":"stdout","time":23.53960823,"data":"oai_images False oai_checkpoint False\n"}
+,{"stream_name":"stdout","time":23.715053307,"data":"pilkwang /kaggle/input/datasets/pilkwang/rsna-knee-llm-labels/report_labels_v2.csv\n"}
+,{"stream_name":"stdout","time":23.751134942,"data":"v4 /kaggle/input/datasets/stevenleehans/rsna-knee-llm-report-labels/llm_labels_v4_blend.csv rows 4407 gold_zeroed 58\n"}
+,{"stream_name":"stdout","time":24.883656638,"data":"train 3478 val 882 oof_subset 200 images /kaggle/input/competitions/rsna-knee-abnormality-detection/train_series\n"}
+,{"stream_name":"stdout","time":26.471300746,"data":"fold0_last.pt first_mb_sha256 eb0e7aa36def97fb\n"}
+,{"stream_name":"stdout","time":31.314030515,"data":"RESUMED from v3 epoch 3\n"}
+,{"stream_name":"stdout","time":31.355550225,"data":"v5 optimizer fresh, warmup 500 from /kaggle/input/rsna-knee-f0-v3-ckpt/fold0_last.pt\n"}
+,{"stream_name":"stdout","time":83.242835481,"data":"s/iter 1.026 projected_epoch_hours 0.991\n"}
+,{"stream_name":"stdout","time":3736.459648919,"data":"epoch 4 resumed_epoch 1 steps 3478 loss 0.5661 subset_oof 0.7299 std 0.219542 mean ACL:0.178 MCL:0.153 Medial Meniscus:0.459 Lateral Meniscus:0.165 Medial OA:0.466 Lateral OA:0.376 PF OA:0.555 Effusion:0.526 Synovitis:0.395 Baker's:0.318 Contusion:0.212 Fracture:0.168\n"}
+,{"stream_name":"stdout","time":7493.622853951,"data":"epoch 5 resumed_epoch 2 steps 3478 loss 0.5623 subset_oof 0.7517 std 0.253431 mean ACL:0.221 MCL:0.220 Medial Meniscus:0.500 Lateral Meniscus:0.258 Medial OA:0.600 Lateral OA:0.485 PF OA:0.641 Effusion:0.653 Synovitis:0.594 Baker's:0.428 Contusion:0.257 Fracture:0.178\n"}
+,{"stream_name":"stdout","time":7493.623152203,"data":"KILL oof 0.7517405507432158 0.78\n"}
+,{"stream_name":"stdout","time":7998.171031047,"data":"oof 200/882\n"}
+,{"stream_name":"stdout","time":8513.797761356,"data":"oof 400/882\n"}
+,{"stream_name":"stdout","time":9028.506158717,"data":"oof 600/882\n"}
+,{"stream_name":"stdout","time":9543.860348135,"data":"oof 800/882\n"}
+,{"stream_name":"stdout","time":9755.552187972,"data":"EXIT {\"status\": \"kill\", \"epoch\": 5, \"resumed_from_epoch\": 3, \"wall_hours\": 2.7033247488074834, \"oof_rows\": 882, \"pred_std\": 0.2534311631198181, \"oof_macro\": 0.7502924386192994, \"head_lr\": 0.0003, \"backbone_lr\": 3e-05, \"train_res\": 384, \"warmup_steps\": 500, \"subset_oof\": 0.7517405507432158, \"floor\": 0.78}\n"}
+,{"stream_name":"stderr","time":9764.590951726,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":9764.590982061,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":9764.968932727,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":9764.968960369,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":9765.95925403,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":9767.720125403,"data":"[NbConvertApp] Writing 1119516 bytes to __results__.html\n"}
+]

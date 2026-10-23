@@ -1,0 +1,30 @@
+{
+  "decision": "overlay",
+  "keep": "55779066",
+  "do_not_submit_holdout_ids": true,
+  "test_submit": false,
+  "source": "convnext-oof870-unequal-strict",
+  "weights": {
+    "ACL": 0.49,
+    "MCL": 0.49,
+    "Medial Meniscus": 0.49,
+    "Lateral Meniscus": 0.0,
+    "Medial OA": 0.49,
+    "Lateral OA": 0.0,
+    "PF OA": 0.0,
+    "Effusion": 0.49,
+    "Synovitis": 0.49,
+    "Baker's": 0.49,
+    "Contusion": 0.0,
+    "Fracture": 0.0
+  },
+  "dropped": [
+    "Lateral Meniscus",
+    "Lateral OA",
+    "PF OA",
+    "Contusion",
+    "Fracture"
+  ],
+  "docker": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "kernel_source": "romantamrazov/rsna-knee-dinosaur-v5-train"
+}

@@ -1,0 +1,2 @@
+densenet_holdout870.csv is the seed-2026 train holdout, not the hidden test.
+Keep 55779066 until a local mill-870 join licenses a TEST overlay.

@@ -1,0 +1,13 @@
+{
+  "decision": "overlay",
+  "keep": "55779066",
+  "source": "coatnet870-gate",
+  "do_not_submit_holdout_ids": true,
+  "author_claim_public": 0.943,
+  "author_claim_is_not_our_cli": true,
+  "findings": [
+    "MCL",
+    "Effusion"
+  ],
+  "weight": 0.15
+}

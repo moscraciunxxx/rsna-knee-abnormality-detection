@@ -1,0 +1,37 @@
+[{"stream_name":"stdout","time":16.93079172,"data":"nvidia-smi: GPU 0: Tesla T4 (UUID: GPU-dc3c9809-a6a1-8d2b-7ee5-6a0732a23f29)\n"}
+,{"stream_name":"stdout","time":16.930827712,"data":"GPU 1: Tesla T4 (UUID: GPU-4596641c-14e3-cb23-3859-6efb0e690dc4)\n"}
+,{"stream_name":"stdout","time":16.930834303,"data":"[dn121-head] PRIVATE frozen RadImageNet-DenseNet121 + new 12-way head. Gold-58 out of the loss. Mill-870 out of the loss. DO NOT SUBMIT. keep 55779066.\n"}
+,{"stream_name":"stdout","time":17.128905144,"data":"[dn121-head] fit_n=3479 holdout_n=870 gold_n=58 gold_in_fit=0 holdout_in_fit=0\n"}
+,{"stream_name":"stdout","time":18.498723755,"data":"[dn121-head] loaded n=604 unexpected=0 frozen=True head=12\n"}
+,{"stream_name":"stdout","time":115.345752781,"data":"[dn121-head] encoded 200/4407 images=3600 missing=0 elapsed_s=96.4\n"}
+,{"stream_name":"stdout","time":212.860940308,"data":"[dn121-head] encoded 400/4407 images=7200 missing=0 elapsed_s=193.9\n"}
+,{"stream_name":"stdout","time":324.4146716,"data":"[dn121-head] encoded 600/4407 images=10800 missing=0 elapsed_s=305.4\n"}
+,{"stream_name":"stdout","time":436.545875163,"data":"[dn121-head] encoded 800/4407 images=14400 missing=0 elapsed_s=417.6\n"}
+,{"stream_name":"stdout","time":529.396622073,"data":"[dn121-head] encoded 1000/4407 images=18000 missing=0 elapsed_s=510.4\n"}
+,{"stream_name":"stdout","time":622.13713614,"data":"[dn121-head] encoded 1200/4407 images=21600 missing=0 elapsed_s=603.2\n"}
+,{"stream_name":"stdout","time":706.73937113,"data":"[dn121-head] encoded 1400/4407 images=25200 missing=0 elapsed_s=687.8\n"}
+,{"stream_name":"stdout","time":793.931750226,"data":"[dn121-head] encoded 1600/4407 images=28800 missing=0 elapsed_s=774.9\n"}
+,{"stream_name":"stdout","time":883.690126102,"data":"[dn121-head] encoded 1800/4407 images=32400 missing=0 elapsed_s=864.7\n"}
+,{"stream_name":"stdout","time":972.381643068,"data":"[dn121-head] encoded 2000/4407 images=36000 missing=0 elapsed_s=953.4\n"}
+,{"stream_name":"stdout","time":1064.816117657,"data":"[dn121-head] encoded 2200/4407 images=39600 missing=0 elapsed_s=1045.8\n"}
+,{"stream_name":"stdout","time":1157.387916815,"data":"[dn121-head] encoded 2400/4407 images=43200 missing=0 elapsed_s=1138.4\n"}
+,{"stream_name":"stdout","time":1250.771427213,"data":"[dn121-head] encoded 2600/4407 images=46800 missing=0 elapsed_s=1231.8\n"}
+,{"stream_name":"stdout","time":1339.975511323,"data":"[dn121-head] encoded 2800/4407 images=50400 missing=0 elapsed_s=1321.0\n"}
+,{"stream_name":"stdout","time":1429.674895806,"data":"[dn121-head] encoded 3000/4407 images=54000 missing=0 elapsed_s=1410.7\n"}
+,{"stream_name":"stdout","time":1522.086747531,"data":"[dn121-head] encoded 3200/4407 images=57600 missing=0 elapsed_s=1503.1\n"}
+,{"stream_name":"stdout","time":1605.535566478,"data":"[dn121-head] encoded 3400/4407 images=61200 missing=0 elapsed_s=1586.6\n"}
+,{"stream_name":"stdout","time":1691.884267032,"data":"[dn121-head] encoded 3600/4407 images=64800 missing=0 elapsed_s=1672.9\n"}
+,{"stream_name":"stdout","time":1776.779735795,"data":"[dn121-head] encoded 3800/4407 images=68400 missing=0 elapsed_s=1757.8\n"}
+,{"stream_name":"stdout","time":1857.943457498,"data":"[dn121-head] encoded 4000/4407 images=72000 missing=0 elapsed_s=1839.0\n"}
+,{"stream_name":"stdout","time":1940.14026627,"data":"[dn121-head] encoded 4200/4407 images=75600 missing=0 elapsed_s=1921.2\n"}
+,{"stream_name":"stdout","time":2025.457124756,"data":"[dn121-head] encoded 4400/4407 images=79200 missing=0 elapsed_s=2006.5\n"}
+,{"stream_name":"stdout","time":2028.515093312,"data":"[dn121-head] encode done n=4407 images=79326 missing=0 elapsed_s=2009.5\n"}
+,{"stream_name":"stdout","time":2029.247382873,"data":"[dn121-head] gold_macro=0.7225 abort=False threshold=0.94\n"}
+,{"stream_name":"stdout","time":2029.274017715,"data":"[dn121-head] wrote densenet_holdout870.csv rows=870 missing_images=0. DO NOT SUBMIT. keep 55779066.\n"}
+,{"stream_name":"stderr","time":2035.00402468,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2035.00404982,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2035.260638942,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2035.260664243,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2035.941888659,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2037.256429071,"data":"[NbConvertApp] Writing 444744 bytes to __results__.html\n"}
+]

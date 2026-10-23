@@ -1,0 +1,87 @@
+"""After coatnet870-gate COMPLETE: join mill-870 vs CoAtNet. Never Submit.
+
+Writes artifacts/coatnet870/overlay_spec.json. Does not touch the vitb870
+hold spec at kaggle_kernel_mill870_ov/overlay_spec.json.
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+from pathlib import Path
+
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from rsna_knee.mill_holdout import (
+    MillHoldoutMissing,
+    decide_private_overlay,
+    holdout_ids_and_y,
+    join_mill_holdout,
+)
+from rsna_knee.schema import FINDINGS, ID_COLUMN
+
+VITB_SPEC = ROOT / "kaggle_kernel_mill870_ov" / "overlay_spec.json"
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--mill", type=Path, default=ROOT / "data" / "mill_v10_holdout870.csv")
+    parser.add_argument("--coatnet", type=Path, required=True)
+    parser.add_argument(
+        "--spec",
+        type=Path,
+        default=ROOT / "artifacts" / "coatnet870" / "overlay_spec.json",
+    )
+    args = parser.parse_args()
+    if args.spec.resolve() == VITB_SPEC.resolve():
+        raise SystemExit("refusing to overwrite the vitb870 overlay_spec; pass a coatnet spec path")
+    train = pd.read_csv(ROOT / "data" / "train.csv", dtype={ID_COLUMN: str})
+    v4 = pd.read_csv(
+        ROOT / ".cache" / "llm_steven" / "llm_labels_v4_blend.csv",
+        dtype={ID_COLUMN: str},
+    )
+    ids, y = holdout_ids_and_y(train, v4)
+    mill = pd.read_csv(args.mill, dtype={ID_COLUMN: str}) if args.mill.is_file() else None
+    mill_join = join_mill_holdout(ids, mill, y)
+    coat = pd.read_csv(args.coatnet, dtype={ID_COLUMN: str}) if args.coatnet.is_file() else None
+    if coat is None:
+        raise MillHoldoutMissing("coatnet_holdout870.csv missing")
+    new_join = join_mill_holdout(ids, coat, y)
+    print(f"mill n={len(mill_join.ids)} macro={mill_join.macro:.4f}")
+    print(f"coatnet n={len(new_join.ids)} macro={new_join.macro:.4f}")
+    print(f"{'finding':22} {'mill':7} {'coat':7} {'delta':7}")
+    for name, left, right in zip(FINDINGS, mill_join.per_auc, new_join.per_auc):
+        delta = (right - left) if (left == left and right == right) else float("nan")
+        print(f"{name:22} {left:7.4f} {right:7.4f} {delta:7.4f}")
+    decision, weights = decide_private_overlay(mill_join.per_auc, new_join.per_auc)
+    spec = {
+        "decision": decision,
+        "keep": "55779066",
+        "source": "coatnet870-gate",
+        "do_not_submit_holdout_ids": True,
+        "author_claim_public": 0.943,
+        "author_claim_is_not_our_cli": True,
+        "findings": [name for name, weight in (weights or {}).items() if weight > 0],
+        "weight": (max((weights or {}).values()) if weights else 0.0),
+    }
+    args.spec.parent.mkdir(parents=True, exist_ok=True)
+    args.spec.write_text(json.dumps(spec, indent=2) + "\n", encoding="utf-8")
+    print(f"decision={decision} spec={args.spec}")
+    print("keep 55779066. DO NOT SUBMIT vitaliecervinschi/rsna-knee-coatnet870-gate.")
+    if decision == "stop":
+        print("STOP_PUBLIC_TRAINS: coatnet < mill on every finding; keep 55779066; do not Submit")
+    elif decision == "hold":
+        print("HOLD: no legal overlay; keep 55779066; do not Submit")
+    else:
+        print(
+            f"OVERLAY licensed findings={spec['findings']} w={spec['weight']:.2f}. "
+            "Do not Submit the holdout kernel. A TEST overlay is a separate kernel and is not auto-pushed."
+        )
+
+
+if __name__ == "__main__":
+    main()

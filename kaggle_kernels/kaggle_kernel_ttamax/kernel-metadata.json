@@ -1,0 +1,27 @@
+{
+  "id": "vitaliecervinschi/rsna-knee-ttamax-v1",
+  "title": "RSNA Knee tta-max v1",
+  "code_file": "main.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "dreaddevelopment/raptor-knee-maxspan",
+    "dreaddevelopment/raptor-knee-widedense",
+    "tonylica/rsna-knee-bend-dinov3-0917-repro-assets"
+  ],
+  "kernel_sources": [
+    "romantamrazov/rsna-knee-dinosaur-v3-train"
+  ],
+  "competition_sources": [
+    "rsna-knee-abnormality-detection"
+  ],
+  "model_sources": [
+    "metaresearch/dinov2/PyTorch/small/1"
+  ],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461"
+}

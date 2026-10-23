@@ -1,0 +1,40 @@
+[{"stream_name":"stdout","time":0.859096822,"data":"nvidia-smi: Tesla T4, 7.5\n"}
+,{"stream_name":"stdout","time":0.859143843,"data":"Tesla T4, 7.5\n"}
+,{"stream_name":"stdout","time":0.996530086,"data":"BOOT ROOT /kaggle/input/rsna-knee-abnormality-detection\n"}
+,{"stream_name":"stdout","time":0.996551475,"data":"BOOT ASSET /kaggle/input/rsna-knee-bend-dinov3-0917-repro-assets\n"}
+,{"stream_name":"stdout","time":0.996557186,"data":"BOOT DINO /kaggle/input/rsna-knee-bend-dinov3-0917-repro-assets/dinov2-small\n"}
+,{"stream_name":"stdout","time":8.373986583,"data":"BOOT GPU Tesla T4 cap=(7, 5)\n"}
+,{"stream_name":"stdout","time":10.379605774,"data":"[    0.1s] memory: 29.9 GB available, 13.5 GB to the cache; sizing for 4407 train + 1322 test studies -\u003e 1 group(s) of 3 = 3 slices per slot\n"}
+,{"stream_name":"stdout","time":11.856735393,"data":"[vitb870] VITB_HOLD_ONLY: skip mill V10 ensemble; encode r336 ViT-B on LLM-soft holdout. DO NOT SUBMIT.\n"}
+,{"stream_name":"stdout","time":11.862161826,"data":"[vitb870] loading /kaggle/input/rsna-knee-dinov2-base-llm-models/r336_best.pt\n"}
+,{"stream_name":"stdout","time":33.828640987,"data":"[vitb870] load missing=[] unexpected=[]\n"}
+,{"stream_name":"stdout","time":34.129585893,"data":"[mill-holdout] llm-soft holdout n=870 gold=58 excluded leaked=0 seed=2026\n"}
+,{"stream_name":"stdout","time":34.217308357,"data":"[vitb870] llm-soft holdout n=870 leaked_vs_gold58=0 seed=2026\n"}
+,{"stream_name":"stdout","time":124.708077245,"data":"[  114.5s] vitb870 laterality: 464 from the tag, 390 from geometry, 16 unresolved; tag and geometry disagree on 8 (1.7% of the tagged)\n"}
+,{"stream_name":"stdout","time":124.709450465,"data":"[  114.5s] vitb870: cache (870, 6, 3, 336, 336) = 1.6 GB\n"}
+,{"stream_name":"stdout","time":124.723973336,"data":"[  114.5s] vitb870: ordering 3971 slot-series (135057 slice headers)\n"}
+,{"stream_name":"stdout","time":496.392003461,"data":"[  486.2s] vitb870: ordered 3971/3971 by geometry (0 kept arbitrary) in 372s\n"}
+,{"stream_name":"stdout","time":496.399665349,"data":"[  486.2s] vitb870: decoding 3971 slot-series\n"}
+,{"stream_name":"stdout","time":558.357672689,"data":"[  548.1s] vitb870: 3971/3971 slots filled\n"}
+,{"stream_name":"stdout","time":604.492552732,"data":"[vitb870] vitb vs llm-soft holdout n=870 macro=0.8539\n"}
+,{"stream_name":"stdout","time":604.492622913,"data":"[vitb870] vitb ACL                    0.8777\n"}
+,{"stream_name":"stdout","time":604.492630446,"data":"[vitb870] vitb MCL                    0.7960\n"}
+,{"stream_name":"stdout","time":604.492635237,"data":"[vitb870] vitb Medial Meniscus        0.8239\n"}
+,{"stream_name":"stdout","time":604.492639766,"data":"[vitb870] vitb Lateral Meniscus       0.8115\n"}
+,{"stream_name":"stdout","time":604.492644209,"data":"[vitb870] vitb Medial OA              0.8695\n"}
+,{"stream_name":"stdout","time":604.492648923,"data":"[vitb870] vitb Lateral OA             0.8412\n"}
+,{"stream_name":"stdout","time":604.492658803,"data":"[vitb870] vitb PF OA                  0.8382\n"}
+,{"stream_name":"stdout","time":604.492662165,"data":"[vitb870] vitb Effusion               0.8879\n"}
+,{"stream_name":"stdout","time":604.492665073,"data":"[vitb870] vitb Synovitis              0.9149\n"}
+,{"stream_name":"stdout","time":604.492668107,"data":"[vitb870] vitb Baker's                0.8897\n"}
+,{"stream_name":"stdout","time":604.492671159,"data":"[vitb870] vitb Contusion              0.8189\n"}
+,{"stream_name":"stdout","time":604.492674225,"data":"[vitb870] vitb Fracture               0.8774\n"}
+,{"stream_name":"stdout","time":604.492773241,"data":"[vitb870] mill_v10_holdout870.csv not shipped in kernel folder; join locally after download\n"}
+,{"stream_name":"stdout","time":604.49279524,"data":"[vitb870] RESEARCH_METHOD=nursrijan r336 ViT-B/14 SlotHead on mill-870 UIDs (not dreaddevelopment EfficientNet-B0, not DINOsaur V5, not mill ensemble) | vitb_holdout_macro=0.8539 n=870 leaked=0 | Baker's ok | DO NOT SUBMIT (train holdout IDs)\n"}
+,{"stream_name":"stderr","time":610.962291141,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":610.962315032,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":611.243024721,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":611.243052704,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":612.002357945,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":613.529030343,"data":"[NbConvertApp] Writing 621079 bytes to __results__.html\n"}
+]

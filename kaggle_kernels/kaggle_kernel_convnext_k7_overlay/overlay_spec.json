@@ -1,0 +1,20 @@
+{
+  "decision": "overlay",
+  "keep": "55779066",
+  "do_not_submit_holdout_ids": true,
+  "test_submit": false,
+  "source": "convnext-oof870-k7",
+  "findings": [
+    "ACL",
+    "MCL",
+    "Medial Meniscus",
+    "Medial OA",
+    "Effusion",
+    "Synovitis",
+    "Baker's"
+  ],
+  "weight": 0.15,
+  "docker": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "kernel_source": "romantamrazov/rsna-knee-dinosaur-v5-train",
+  "push_only_if_56921398_public_score_gte": 0.936
+}
